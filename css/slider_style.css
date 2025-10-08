@@ -1,0 +1,11 @@
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    color: white;
+}
