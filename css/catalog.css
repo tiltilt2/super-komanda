@@ -1,0 +1,59 @@
+/* для просмотра  */
+.product-img-slider {
+  width: 260px;
+  height: 254px;
+  background-color: grey;
+}
+
+.main-catalog {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 100px 40px;
+  /* если надо поменять кол-во карточек в строке, то менять надо width: 50%; */
+  /* АДАПТИВ УЖЕ ЕСТЬ */
+  width: 90%;
+  max-width: 1200px;
+}
+
+.catalog-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-weight: bold;
+  margin: 20px 0px 0px 0px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #000;
+  margin: 15px 0px 48px 0px;
+}
+
+.product-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+button {
+  width: 260px;
+  padding: 13px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #999999;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #bbb;
+}
