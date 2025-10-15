@@ -2,7 +2,6 @@
 .product-img-slider {
   width: 260px;
   height: 254px;
-  background-color: grey;
 }
 
 .main-catalog {
@@ -56,4 +55,43 @@ button {
 
 button:hover {
   background-color: #bbb;
+}
+
+.swiper {
+  width: 260px;
+  height: 254px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+
+.card-img-slide {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: center; */
+  object-position: top;
+}
+
+.custom-prev-btn,
+.custom-next-btn {
+  position: absolute;
+  top: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.custom-prev-btn {
+  left: 10px;
+}
+
+.custom-next-btn {
+  right: 10px;
 }
