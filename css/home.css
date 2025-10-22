@@ -43,3 +43,16 @@ body {
         text-transform: uppercase;
     }
 }
+
+.block-cards {
+    h3 {
+        font-size: 25px;
+    }
+    h1 {
+        font-size: 100px;
+    }
+}
+
+.leaders {
+    height: 500px;
+}
