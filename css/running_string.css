@@ -1,0 +1,31 @@
+body {
+        margin: 0;
+        color: black;
+        font-family: sans-serif;
+        overflow-x: hidden;
+    }
+
+    .marquee {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .marquee__inner {
+        display: inline-flex;
+        animation: scroll 15s linear infinite;
+    }
+
+    .marquee__inner > * {
+        margin-right: 2rem; /* расстояние между элементами */
+    }
+
+    @keyframes scroll {
+        from {
+        transform: translateX(-100%);
+        }
+        to {
+        transform: translateX(0); /* сдвигаем на половину ширины, т.к. будет дубликат */
+        }
+    }
