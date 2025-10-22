@@ -1,5 +1,45 @@
+body {
+    text-transform: uppercase;
+}
+
 .head {
     background-color: #505050;
     display: flex;
     gap: 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    .head-menu {
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 45px;
+        }
+    }
+    .head-right {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.443);
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 64px;
+    }
+    button {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        text-transform: uppercase;
+    }
 }
