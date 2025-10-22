@@ -14,12 +14,12 @@
         <section class="product-view">
             <div class="gallery">
                 <ul class="thumbs">
-                    <li><img src="img/easteregg.jpg" alt="thumb"></li>
-                    <li><img src="img/easteregg.jpg" alt="thumb"></li>
-                    <li><img src="img/easteregg.jpg" alt="thumb"></li>
+                    <li><img src="img/meshok_obuv.svg" data-full="img/meshok_obuv.svg" alt="thumb"></li>
+                    <li><img src="img/krushka.svg" data-full="img/krushka.svg" alt="thumb"></li>
+                    <li><img src="img/krushka2.svg" data-full="img/krushka2.svg" alt="thumb"></li>
                 </ul>
                 <div class="main-photo">
-                    <img src="img/easteregg.jpg" alt="product">
+                    <img src="img/meshok_obuv.svg" alt="product" id="main-image">
                 </div>
             </div>
             <aside class="info">
@@ -40,12 +40,27 @@
         <section class="other-products">
             <h2>ДРУГИЕ ТОВАРЫ</h2>
             <div class="products-grid">
-                <div class="card-small"><img src="img/easteregg.jpg" alt="p"><div class="caption">480 ₽</div></div>
-                <div class="card-small"><img src="img/easteregg.jpg" alt="p"><div class="caption">799 ₽</div></div>
-                <div class="card-small"><img src="img/easteregg.jpg" alt="p"><div class="caption">799 ₽</div></div>
-                <div class="card-small"><img src="img/easteregg.jpg" alt="p"><div class="caption">799 ₽</div></div>
+                <div class="card-small"><img src="img/brelok.svg" alt="p"><div class="caption">480 ₽</div></div>
+                <div class="card-small"><img src="img/mach.svg" alt="p"><div class="caption">799 ₽</div></div>
+                <div class="card-small"><img src="img/podushka.svg" alt="p"><div class="caption">799 ₽</div></div>
+                <div class="card-small"><img src="img/polotenche.jpg" alt="p"><div class="caption">799 ₽</div></div>
             </div>
         </section>
     </div>
 </body>
+<script>
+    const thumbs = document.querySelectorAll('.thumbs img');
+    const mainImage = document.getElementById('main-image');
+
+    thumbs.forEach(thumb => {
+        thumb.addEventListener('click', () => {
+            // Меняем главное изображение
+            mainImage.src = thumb.dataset.full;
+
+            // Добавим активный стиль (например, рамку)
+            thumbs.forEach(t => t.classList.remove('active'));
+            thumb.classList.add('active');
+        });
+    });
+</script>
 </html>
