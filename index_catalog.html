@@ -12,55 +12,280 @@
   </head>
   <body>
     <main class="main-catalog">
-      <div class="catalog-grid">
-        <!-- 1 -->
-        <div class="catalog-card">
-<<<<<<< HEAD
-          <div class="product-img-slider">
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="card">
-                    <img
-                      src="img/t-short/t-short_black_1.jpg"
-                      alt=""
-                      class="card-img-slide"
-                    />
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card">
-                    <img
-                      src="img/t-short/t-short_black_2.jpg"
-                      alt=""
-                      class="card-img-slide"
-                    />
-                  </div>
-                </div>
-              </div>
+      <h1 class="title-catalog">ИЗБРАННОЕ</h1>
 
-              <div class="custom-prev-btn">
-                <img src="img/icons/array-left.png" alt="array left" />
-              </div>
-              <div class="custom-next-btn">
-                <img src="img/icons/array-right.png" alt="array right" />
+      <div class="filters">
+        <select name="sort" id="sort">
+          <option value="available">сначала в наличии</option>
+          <option value="price-asc">по возрастанию цены</option>
+          <option value="price-desc">по убыванию цены</option>
+        </select>
+
+        <div class="search">
+          <input type="text" placeholder="поиск" />
+          <button class="search-btn">
+            <img src="../img/icons/search-icon.svg" alt="Поиск" />
+          </button>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="img/icons/like-icon.svg" alt="избранное" class="favorite" />
+
+          <div class="card-inner">
+            <div class="product-img-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_1.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_2.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
               </div>
             </div>
-=======
-          <div class="product-img-slider"></div>
-          <!-- h3 -->
-          <p class="product-name">Мяч баскетбольный PEAK</p> 
-          <p class="product-price">2990 ₽</p>
-          <div class="product-buttons">
-            <button class="btn-details">Подробнее</button>
-            <button class="btn-cart">В корзину</button>
->>>>>>> 3d8d265 (created home page)
           </div>
-          <p class="product-name">Мяч баскетбольный PEAK</p>
-          <p class="product-price">2990 ₽</p>
-          <div class="product-buttons">
-            <button class="btn-details">Подробнее</button>
-            <button class="btn-cart">В корзину</button>
+          <div class="card-description">
+            <h3 class="card-title">Футболка с логотипом</h3>
+            <p class="card-price">1990₽</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/icons/like-icon.svg" alt="избранное" class="favorite" />
+
+          <div class="card-inner">
+            <div class="product-img-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_1.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_2.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-description">
+            <h3 class="card-title">Футболка с логотипом</h3>
+            <p class="card-price">1990₽</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/icons/like-icon.svg" alt="избранное" class="favorite" />
+
+          <div class="card-inner">
+            <div class="product-img-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_1.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_2.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-description">
+            <h3 class="card-title">Футболка с логотипом</h3>
+            <p class="card-price">1990₽</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/icons/like-icon.svg" alt="избранное" class="favorite" />
+
+          <div class="card-inner">
+            <div class="product-img-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_1.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_2.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-description">
+            <h3 class="card-title">Футболка с логотипом</h3>
+            <p class="card-price">1990₽</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/icons/like-icon.svg" alt="избранное" class="favorite" />
+
+          <div class="card-inner">
+            <div class="product-img-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_1.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_2.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-description">
+            <h3 class="card-title">Футболка с логотипом</h3>
+            <p class="card-price">1990₽</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/icons/like-icon.svg" alt="избранное" class="favorite" />
+
+          <div class="card-inner">
+            <div class="product-img-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_1.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_2.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-description">
+            <h3 class="card-title">Футболка с логотипом</h3>
+            <p class="card-price">1990₽</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/icons/like-icon.svg" alt="избранное" class="favorite" />
+
+          <div class="card-inner">
+            <div class="product-img-slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_1.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-slide">
+                      <img
+                        src="img/t-short/t-short_black_2.jpg"
+                        alt=""
+                        class="card-img-slide"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-description">
+            <h3 class="card-title">Футболка с логотипом</h3>
+            <p class="card-price">1990₽</p>
           </div>
         </div>
       </div>

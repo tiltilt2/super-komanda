@@ -1,27 +1,26 @@
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",
-  loop: false,
+  loop: true, // бесконечная прокрутка
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+    bulletClass: "swiper-pagination-bullet",
+    bulletActiveClass: "swiper-pagination-bullet-active",
   },
 
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-    nextEl: ".custom-next-btn",
-    prevEl: ".custom-prev-btn",
   },
 
   // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
   },
-
-  loop: true, // бесконечная прокрутка
 });
 
 const otherProductsSlider = new Swiper(".other-products-slider", {
@@ -32,6 +31,7 @@ const otherProductsSlider = new Swiper(".other-products-slider", {
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
 
   // Navigation arrows
