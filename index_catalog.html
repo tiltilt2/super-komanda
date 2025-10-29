@@ -21,15 +21,25 @@
           <option value="price-desc">по убыванию цены</option>
         </select>
 
-        <div class="search">
-          <input type="text" placeholder="поиск" />
-          <button class="search-btn">
-            <img src="../img/icons/search-icon.svg" alt="Поиск" />
+        <form class="search">
+          <input
+            type="text"
+            name="search"
+            id="searchInput"
+            placeholder="поиск"
+          />
+          <button
+            type="submit"
+            id="searchButton"
+            class="search-btn"
+            onclick="searchProducts()"
+          >
+            <img src="img/icons/search-icon.svg" alt="Поиск" />
           </button>
-        </div>
+        </form>
       </div>
 
-      <div class="cards">
+      <div class="cards" id="cardsContainer">
         <div class="card">
           <img src="img/icons/like-icon.svg" alt="избранное" class="favorite" />
 
@@ -292,5 +302,6 @@
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/slider_script.js"></script>
+    <script src="catalog_js.js"></script>
   </body>
 </html>
