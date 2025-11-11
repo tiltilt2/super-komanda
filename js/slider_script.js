@@ -45,3 +45,16 @@ const otherProductsSlider = new Swiper(".other-products-slider", {
     el: ".swiper-scrollbar",
   },
 });
+
+const runningString = new Swiper(".running-string", {
+  slidesPerView: "auto",
+  spaceBetween: 50,
+  loop: true,
+  speed: 8000,
+  allowTouchMove: false,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    reverseDirection: true
+  }
+});

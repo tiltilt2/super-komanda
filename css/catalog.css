@@ -120,16 +120,7 @@ main {
 
 .card-price {
   font-size: 15px;
-  font-weight: bold;
-}
-
-.favorite {
-  position: absolute;
-  top: 14px;
-  right: 15px;
-  cursor: pointer;
-  width: 18px;
-  height: 16px;
+  font-weight: 600;
 }
 
 .product-img-slider {
@@ -156,4 +147,45 @@ main {
 
 .card .swiper-pagination-bullet-active {
   background-color: #ffffff;
+}
+
+.no-results {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+  display: none;
+}
+
+.favorite-btn {
+  width: 18px;
+  height: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite {
+  width: 18px;
+  height: 16px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+}
+
+.favorite-active {
+  opacity: 0;
+}
+
+.favorite-btn.active .favorite-default {
+  opacity: 0;
+}
+
+.favorite-btn.active .favorite-active {
+  opacity: 1;
 }
