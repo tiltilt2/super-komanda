@@ -1,7 +1,6 @@
 .footer {
     background-color: #999; 
     color: #fff;
-    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
