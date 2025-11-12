@@ -1,0 +1,58 @@
+.card {
+    background: #fff;
+    width: 300px;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .card-image{
+    width: 100%;
+  }
+
+  .rating {
+    position: absolute;
+    top: 23px;
+    left: 28px;
+    font-size: 20px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .edit {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin: 12px 0 4px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    background: #3B71B7;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-top: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+
+  .description {
+    display: flex;
+    justify-content: space-between;
+  }
