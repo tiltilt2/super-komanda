@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/new_card.css">
+
+    <!-- прошу разберитесь со стилями, сделайте отдальный файл с норм названием -->
+
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/card.css">
     <title>Document</title>
-    <link rel="stylesheet" href="css/slider_style.css">
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
 </head>
 <body>
+
+    <!-- ШАПКА -->
     <header class="head">
         <div class="head-left">
-            <!-- логотип челбаскет -->
-            <img src="" alt="челбаскет">
+            <img src="img/icons/Logo.svg" alt="челбаскет"  width="100px">
         </div>
         <div class="head-menu">
-            <!-- меню -->
             <ul>
                 <li>Главная</li>
-                <li>Футболки</li>
-                <li>Майки</li>
-                <li>Кофты</li>
-                <li>Мячи</li>
-                <li>Сувениры</li>
+                <li>Каталог <img src="img/icons/arrow_down.svg" alt=""></li>
             </ul>
         </div>
         <div class="head-right">
-            <img src="" alt="поиск">
-            <img src="" alt="корзина">
-            <img src="" alt="профиль">
+            <img src="img/icons/search.svg" alt="поиск">
+            <img src="img/icons/basket.svg" alt="корзина">
+            <img src="img/icons/user.svg" alt="профиль">
         </div>
     </header>
+    <!-- ШАПКА -->
+
     <div class="content">
         <div class="product-container">
             <div class="product-image">
@@ -68,29 +68,30 @@
         </div>
 
     </div>
+   <!-- ПОДВАЛ -->
     <footer class="footer">
         <div class="up-footer">
             <div class="left-footer">
-                <img src="img/icons/newlogo.svg" alt="logo">
+                <img src="img/icons/Logo.svg" alt="logo">
                 <p>Станьте тем, кто первый узнает об обновлениях в коллекциях</p>
                 <input class="footer-input-text" type="text" placeholder="E-mail">
                 <p class="label-input">Указывая E-mail вы соглашаетесь бла бла бла </p>
-                <input class="footer-btn" type="submit">
+                <input class="footer-btn" type="submit" value="ПОДПИСАТЬСЯ">
             </div>
-            <div class="right-footer">
+             <div class="right-footer">
                 <div>
-                    <p>Способы оплаты</p>
-                    <p>Статус заказа</p>
-                    <p>Возвраты</p>
-                    <p>Подарочные карты</p>
-                    <p>Покупателям</p>
+                    <li>Способы оплаты</li>
+                    <li>Статус заказа</li>
+                    <li>Возвраты</li>
+                    <li>Подарочные карты</li>
+                    <li>Покупателям</li>
                 </div>
                 <div>
-                    <p>Футболки</p>
-                    <p>Майки</p>
-                    <p>Кофты</p>
-                    <p>Мячи</p>
-                    <p>Сувениры</p>
+                    <li>Футболки</li>
+                    <li>Майки</li>
+                    <li>Кофты</li>
+                    <li>Мячи</li>
+                    <li>Сувениры</li>
                 </div>
             </div>
         </div>
@@ -108,6 +109,8 @@
             </div>
         </div>
     </footer>
+    <!-- ПОДВАЛ -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/slider_script.js"></script>
