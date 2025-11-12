@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/head.css">
     <title>Каталог</title>
 </head>
 <body>
-
-    <!-- ШАПКА -->
     <header class="head">
         <div class="head-left">
             <img src="img/icons/Logo.svg" alt="челбаскет"  width="100px">
@@ -18,7 +15,16 @@
         <div class="head-menu">
             <ul>
                 <li>Главная</li>
-                <li>Каталог <img src="img/icons/arrow_down.svg" alt=""></li>
+                <li class="drop-menu">
+                    <a href="#">Каталог <img src="img/icons/arrow_down.svg" alt=""></a>
+                    <ul>
+                        <li><a href="">Футболки</a></li>
+                        <li><a href="">Майки</a></li>
+                        <li><a href="#">Кофты</a></li>
+                        <li><a href="#">Мячи</a></li>
+                        <li><a href="#">Сувениры</a></li>
+                    </ul></li>
+                </li>
             </ul>
         </div>
         <div class="head-right">
@@ -27,28 +33,58 @@
             <img src="img/icons/user.svg" alt="профиль">
         </div>
     </header>
-    <!-- ШАПКА -->
-
     <main class="main">
         <div class="intro">
-            <p>официальный магазин БК</p>
-            <h1>челбаскет</h1>
+            <p>Официальный магазин бк</p>
+            <h1 class="bold">бк челбаскет</h1>
+            <!-- <button>к покупкам <img src="" alt="стрелка"></button> -->
         </div>
-        <div class="block-cards">
+        <div class="run-line">
+            <marquee direction="right" scrollamount="25">челбаскет · 16 ноября 2025 </marquee>
+        </div>
+        <!-- <div class="block-cards">
             <div class="cards-slider">
 
             </div>
             <h3>баскетбольный клуб · челябинск</h3>
             <h1>челбаскет</h1>
+        </div> -->
+        <div class="new-collection">
+            <div>
+                <aside>
+                    <h3>новая коллекция</h3>
+                    <p>Официальный мерч</p>
+                    <p>Сезон 25-26</p>
+                    <img src="" width="560" height="386" alt="мужчина с кофтой">
+                </aside>
+                <aside>
+                    <img src="" width="560" height="584" alt="мужчина">
+                </aside>
+            </div>
+            <button>узнать подробнее</button>
         </div>
-        <div class="leaders">
+        <div class="season-form">
+            <div>
+                <aside>
+                    <img src="" width="560" height="575" alt="мужчина в форме показывает сап">
+                    <img src="" width="560" height="371" alt="много мужиков в форме">
+                </aside>
+                <aside>
+                    <h3>сезонная форма</h3>
+                    <p>25-26 мерч</p>
+                    <p>Пошив по индвидуальным размерам и возможностью нанесения фамилии и номера</p>
+                    <img src="" width="560" height="750" alt="мужчина в форме">
+                </aside>
+            </div>
+            <button>узнать подробнее</button>
+        </div>
+        <!-- <div class="leaders">
             <h3>лидеры продаж</h3>
             <button>в магазин</button>
-        </div>
+        </div> -->
         <div class="block-cards">
             <div class="cards-slider">
-
-            </div>
+        </div>
         </div>
         <div class="souvenirs">
             <h3>сувениры</h3>
@@ -58,9 +94,6 @@
             <marquee direction="right" scrollamount="25">челбаскет · челбаскет · челбаскет</marquee>
         </div>
     </main>
-
-
-    <!-- ПОДВАЛ -->
     <footer class="footer">
         <div class="up-footer">
             <div class="left-footer">
@@ -101,8 +134,5 @@
             </div>
         </div>
     </footer>
-    <!-- ПОДВАЛ -->
-
-
 </body>
 </html>
