@@ -3,59 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/catalog.css"/>
+    <link rel="stylesheet" href="css/catalog.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="" />
     <title>Челбаскет. Каталог</title>
   </head>
   <body>
     <main class="main-catalog">
-      <h1 class="title-catalog">ИЗБРАННОЕ</h1>
+      <nav class="nav-menu">
+        <ul class="nav-items">
+          <li class="nav-item"><a href="#">Главная</a></li>
+          <li class="nav-item">/</li>
+          <li class="nav-item">Каталог</li>
+        </ul>
+      </nav>
+
+      <h2 class="title-catalog">Новая коллекция</h2>
 
       <div class="filters">
-        <select name="sort" id="sort">
-          <option value="available">сначала в наличии</option>
-          <option value="price-asc">по возрастанию цены</option>
-          <option value="price-desc">по убыванию цены</option>
-        </select>
-
-        <form class="search">
-          <input
-            type="text"
-            name="search"
-            id="searchInput"
-            placeholder="поиск"
+        <button class="btn-all-filters">
+          Все фильтры
+          <img
+            src="img/icons/icons_filter.svg"
+            alt="фильтры"
+            class="btn-all-filters-img"
           />
-          <button
-            type="submit"
-            id="searchButton"
-            class="search-btn"
-            onclick="searchProducts(event)"
-          >
-            <img src="img/icons/search.svg" alt="Поиск" />
-          </button>
-        </form>
+        </button>
+        <select name="sort-price" id="sort-price">
+          <option value="price-asc">по наибольшей цене</option>
+          <option value="price-desc">по наименьшей цене</option>
+          <option value="available">сначала в наличии</option>
+        </select>
       </div>
+
+      <!-- <button class="favorite-btn" type="button">
+            <img
+              src="img/icons/like-icon.svg"
+              alt="избранное"
+              class="favorite favorite-default"
+            />
+            <img
+              src="img/icons/like-icon-active.svg"
+              alt="избранное активное"
+              class="favorite favorite-active"
+            />
+          </button> -->
 
       <div class="cards" id="cardsContainer">
         <div class="card">
-          <button class="favorite-btn" type="button">
-            <img
-              src="img/icons/like-icon.svg"
-              alt="избранное"
-              class="favorite favorite-default"
-            />
-            <img
-              src="img/icons/like-icon-active.svg"
-              alt="избранное активное"
-              class="favorite favorite-active"
-            />
-          </button>
-
           <div class="card-inner">
+            <div class="card-rating">
+              <p>5</p>
+              <img src="img/icons/star.svg" alt="рейтинг" />
+            </div>
             <div class="product-img-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -87,22 +90,9 @@
             <h3 class="card-title">Футболка с логотипом</h3>
             <p class="card-price">1990₽</p>
           </div>
+          <button class="card-btn">В корзину</button>
         </div>
-
-        <div class="card">
-          <button class="favorite-btn" type="button">
-            <img
-              src="img/icons/like-icon.svg"
-              alt="избранное"
-              class="favorite favorite-default"
-            />
-            <img
-              src="img/icons/like-icon-active.svg"
-              alt="избранное активное"
-              class="favorite favorite-active"
-            />
-          </button>
-
+        <div class="card not-available">
           <div class="card-inner">
             <div class="product-img-slider">
               <div class="swiper">
@@ -132,122 +122,19 @@
             </div>
           </div>
           <div class="card-description">
-            <h3 class="card-title">Мяч</h3>
-            <p class="card-price">1990₽</p>
+            <h3 class="card-title not-available">Футболка с логотипом</h3>
+            <p class="card-price not-available">1990₽</p>
+          </div>
+          <div class="des-not-available">
+            <p>Нет в наличии</p>
           </div>
         </div>
-
         <div class="card">
-          <button class="favorite-btn" type="button">
-            <img
-              src="img/icons/like-icon.svg"
-              alt="избранное"
-              class="favorite favorite-default"
-            />
-            <img
-              src="img/icons/like-icon-active.svg"
-              alt="избранное активное"
-              class="favorite favorite-active"
-            />
-          </button>
-
           <div class="card-inner">
-            <div class="product-img-slider">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="card-slide">
-                      <img
-                        src="img/t-short/t-short_black_1.jpg"
-                        alt=""
-                        class="card-img-slide"
-                      />
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="card-slide">
-                      <img
-                        src="img/t-short/t-short_black_2.jpg"
-                        alt=""
-                        class="card-img-slide"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-              </div>
+            <div class="card-rating">
+              <p>5</p>
+              <img src="img/icons/star.svg" alt="рейтинг" />
             </div>
-          </div>
-          <div class="card-description">
-            <h3 class="card-title">Кепка</h3>
-            <p class="card-price">1990₽</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <button class="favorite-btn" type="button">
-            <img
-              src="img/icons/like-icon.svg"
-              alt="избранное"
-              class="favorite favorite-default"
-            />
-            <img
-              src="img/icons/like-icon-active.svg"
-              alt="избранное активное"
-              class="favorite favorite-active"
-            />
-          </button>
-
-          <div class="card-inner">
-            <div class="product-img-slider">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="card-slide">
-                      <img
-                        src="img/t-short/t-short_black_1.jpg"
-                        alt=""
-                        class="card-img-slide"
-                      />
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="card-slide">
-                      <img
-                        src="img/t-short/t-short_black_2.jpg"
-                        alt=""
-                        class="card-img-slide"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-          <div class="card-description">
-            <h3 class="card-title">Худи</h3>
-            <p class="card-price">1990₽</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <button class="favorite-btn" type="button">
-            <img
-              src="img/icons/like-icon.svg"
-              alt="избранное"
-              class="favorite favorite-default"
-            />
-            <img
-              src="img/icons/like-icon-active.svg"
-              alt="избранное активное"
-              class="favorite favorite-active"
-            />
-          </button>
-
-          <div class="card-inner">
             <div class="product-img-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -279,23 +166,14 @@
             <h3 class="card-title">Футболка с логотипом</h3>
             <p class="card-price">1990₽</p>
           </div>
+          <button class="card-btn">В корзину</button>
         </div>
-
         <div class="card">
-          <button class="favorite-btn" type="button">
-            <img
-              src="img/icons/like-icon.svg"
-              alt="избранное"
-              class="favorite favorite-default"
-            />
-            <img
-              src="img/icons/like-icon-active.svg"
-              alt="избранное активное"
-              class="favorite favorite-active"
-            />
-          </button>
-
           <div class="card-inner">
+            <div class="card-rating">
+              <p>5</p>
+              <img src="img/icons/star.svg" alt="рейтинг" />
+            </div>
             <div class="product-img-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -327,23 +205,14 @@
             <h3 class="card-title">Футболка с логотипом</h3>
             <p class="card-price">1990₽</p>
           </div>
+          <button class="card-btn">В корзину</button>
         </div>
-
         <div class="card">
-          <button class="favorite-btn" type="button">
-            <img
-              src="img/icons/like-icon.svg"
-              alt="избранное"
-              class="favorite favorite-default"
-            />
-            <img
-              src="img/icons/like-icon-active.svg"
-              alt="избранное активное"
-              class="favorite favorite-active"
-            />
-          </button>
-
           <div class="card-inner">
+            <div class="card-rating">
+              <p>5</p>
+              <img src="img/icons/star.svg" alt="рейтинг" />
+            </div>
             <div class="product-img-slider">
               <div class="swiper">
                 <div class="swiper-wrapper">
@@ -375,11 +244,12 @@
             <h3 class="card-title">Футболка с логотипом</h3>
             <p class="card-price">1990₽</p>
           </div>
+          <button class="card-btn">В корзину</button>
         </div>
       </div>
 
-      <div>
-        <p id="noResultsMessage" class="no-results">Ничего не найдено</p>
+      <div class="load-more-products">
+        <button class="btn-load-more-products">Загрузить ещё</button>
       </div>
     </main>
 
