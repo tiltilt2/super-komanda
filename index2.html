@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index2.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/footerheader.css">
     <link rel="stylesheet" href="css/cardforcopy.css">
     <title>Товар</title>
 </head>
 <body>
-    <header class="head">
+   <header class="head">
         <div class="head-left">
             <img src="img/icons/Logo.svg" alt="челбаскет"  width="100px">
         </div>
@@ -36,12 +35,27 @@
         </div>
     </header>
     <main class="main">
-        <p>Главна/Каталог</p>
-        <h1>новая коллекция</h1>
-        <div>
-            <button>все фильтры</button>
-            <button>по наибольшей цене</button>
-        </div>
+        <div class="width">
+            <nav class="nav-menu">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#">Главная</a></li>
+                <li class="nav-item">/</li>
+                <li class="nav-item">Каталог</li>
+            </ul>
+            </nav>
+            <h2 class="title-catalog">Новая коллекция</h2>
+                <div class="filters">
+                        <button class="btn-all-filters">
+                        Все фильтры
+                        <img src="img/icons/icons_filter.svg" alt="фильтры" class="btn-all-filters-img"/>
+                        </button>
+                    <select name="sort-price" id="sort-price">
+                        <option value="price-asc">по наибольшей цене</option>
+                        <option value="price-desc">по наименьшей цене</option>
+                        <option value="available">сначала в наличии</option>
+                    </select>
+                </div>
+        
        <div class="more-cards">
          <div class="cards">
             <div class="card">
@@ -220,9 +234,13 @@
             </div>
         </div>
        </div>
+       <div class="btn-down">
+            <button class="load-more-btn">загрузить ещё</button>
+       </div>
     </main>
     <footer class="footer">
-        <div class="up-footer">
+        <div class="footer-container">
+            <div class="up-footer">
             <div class="left-footer">
                 <img src="img/icons/Logo.svg" alt="logo">
                 <p>Станьте тем, кто первый узнает об обновлениях в коллекциях</p>
@@ -248,17 +266,20 @@
             </div>
         </div>
         <div class="down-footer">
-            <div>
-                <p>2025</p>
-            </div>
-            <div class="under">
-                <p>Политика конфиденциальности</p>
-            </div>
-            <div>
-                <img src="img/icons/vk.svg" alt="vk">
-                <img src="img/icons/youtube.svg" alt="youtube">
-                <img src="img/icons/tg.svg" alt="tg">
-            </div>
+            <div class="down-footer-container">
+                <div>
+                    <p>2025</p>
+                </div>
+                <div class="under">
+                    <p>Политика конфиденциальности</p>
+                </div>
+                <div>
+                    <img src="img/icons/vk.svg" alt="vk">
+                    <img src="img/icons/youtube.svg" alt="youtube">
+                    <img src="img/icons/tg.svg" alt="tg">
+                </div>
+            </div>  
+        </div>
         </div>
     </footer>
 </body>
