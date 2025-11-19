@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- прошу разберитесь со стилями, сделайте отдальный файл с норм названием -->
-
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/head.css">
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/new_card_style.css">
     <title>Document</title>
     <link
         rel="stylesheet"
@@ -38,7 +39,7 @@
 
     <div class="content">
         <div class="product-container">
-            <div class="product-image">
+            <div class="product-slider">
                 <img src="img/mauka/mauka_black_1.jpg" alt="Футболка с логотипом">
             </div>
             <div class="product-info">
@@ -64,9 +65,26 @@
                         <p>Покажи, что ты - часть армии поклонников баскетбольного драйва: покоряй трибуны, покоряй город!</p>
                     </div>
                 </div>
+
+                <button class="blue-button product-button">В КОРЗИНУ</button>
+                <button class="transparent-button product-button">ОСТАВИТЬ ОТЗЫВ</button>
             </div>
         </div>
-
+        <div class="feedback-container">
+            <div>ОТЗЫВЫ</div>
+            <div class="feedback-slider">
+                <div class="feedback-card">
+                    <div class="card-head">
+                        <div class="card-name">ЕКАТЕРИНА</div>
+                        <div class="card-date">10 ноября</div>
+                        <div>4 *</div>
+                    </div>
+                    <div class="card-descr">
+                        Товар хороший, но размер оказался немного больше, чем ожидала. Цвет насыщенный, но ткань могла бы быть чуть плотнее.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
    <!-- ПОДВАЛ -->
     <footer class="footer">
