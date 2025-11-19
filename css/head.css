@@ -1,24 +1,45 @@
 .head {
     background-color: #3B71B7;
     display: flex;
-    justify-content: space-around;
+    gap: 200px;
+    justify-content: center;
     align-items: center;
     color: white;
     top: 0;
     z-index: 1;
     position: fixed;
     width: 100%;
-    padding: 10px 0;
     .head-menu {
         ul {
-            display: flex;
-            list-style-type: none;
-            gap: 45px;
-            text-transform: capitalize;
+        display: flex;
+        list-style-type: none;
+        gap: 45px;
+        text-transform: capitalize;
         }
+    }
+    a {
+        color: white;
+        text-decoration: none;
     }
     .head-right {
         display: flex;
         gap: 20px;
     }
+    .drop-menu > ul{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        position: absolute;
+        background-color: #254a7b;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        padding: 10px;
+    }
+    .drop-menu:hover > ul{
+        opacity: 1;
+        visibility: visible;
+        transition-duration: 1s;
+        transition-property: opacity, visibility;
+    } 
 }
