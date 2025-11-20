@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/index2.css">
     <link rel="stylesheet" href="css/footerheader.css">
     <link rel="stylesheet" href="css/cardforcopy.css">
+    <link rel="stylesheet" href="css/overlay.css">
     <title>Товар</title>
 </head>
 <body>
@@ -45,9 +46,9 @@
             </nav>
             <h2 class="title-catalog">Новая коллекция</h2>
                 <div class="filters">
-                        <button class="btn-all-filters">
+                        <button class="filter-open-btn">
                         Все фильтры
-                        <img src="img/icons/icons_filter.svg" alt="фильтры" class="btn-all-filters-img"/>
+                        <img src="img/icons/icons_filter.svg" alt="фильтры" class="filter-open-btn-img"/>
                         </button>
                     <select name="sort-price" id="sort-price">
                         <option value="price-asc">по наибольшей цене</option>
@@ -232,6 +233,20 @@
                 </div>
                 <a href="#" class="card-button-none">В корзину</a>
             </div>
+            <div class="card">
+                <div class="rating">
+                    <span>5</span><img class="star" src="img/icons/star.svg" alt="">
+                </div>
+                <div class="edit">
+                    <img src="img/icons/edit.svg" alt="edit">
+                </div>
+                <img class="card-image" src="img/ball_icanplay.svg" alt="Товар" />
+                <div class="description">
+                    <p class="title">Футболка с логотипом Челбаскета</p>
+                    <p class="price">1990₽</p>
+                </div>
+                <a href="#" class="card-button">В корзину</a>
+            </div>
         </div>
        </div>
        <div class="btn-down">
@@ -239,8 +254,8 @@
        </div>
     </main>
     <footer class="footer">
-        <div class="footer-container">
-            <div class="up-footer">
+        <div class="up-footer">
+            <div class="up-footer-container">
             <div class="left-footer">
                 <img src="img/icons/Logo.svg" alt="logo">
                 <p>Станьте тем, кто первый узнает об обновлениях в коллекциях</p>
@@ -265,6 +280,7 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="down-footer">
             <div class="down-footer-container">
                 <div>
@@ -280,7 +296,101 @@
                 </div>
             </div>  
         </div>
-        </div>
     </footer>
+
+
+    <div class="filter-overlay" id="filterOverlay"></div>
+
+    <div class="filter-panel" id="filterPanel">
+
+    <div class="filter-header">
+        <h2>ФИЛЬТРЫ</h2>
+        <button class="filter-close-btn" id="filterClose">✕</button>
+    </div>
+
+    <div class="filter-content">
+        
+        <h3>ЦЕНА &#8381</h3>
+        <div class="price-box">
+            <input type="text" placeholder="500">
+            <span>—</span>
+            <input type="text" placeholder="500">
+        </div>
+
+        <h3>РАЗМЕР</h3>
+        <div class="size-box">
+            <div class="size-item">XS<br>42–44</div>
+            <div class="size-item">S<br>44–46</div>
+            <div class="size-item">M<br>48–50</div>
+            <div class="size-item">L<br>52–54</div>
+            <div class="size-item">XL<br>56–58</div>
+            <div class="size-item">XXL<br>60–62</div>
+        </div>
+        <h3>ПОЛ</h3>
+        <label class="custom-checkbox">
+            <input type="checkbox">
+            <span>Красный</span>
+        </label>
+        <label class="custom-checkbox">
+            <input type="checkbox">
+            <span>Синий</span>
+        </label>
+        <label class="custom-checkbox">
+            <input type="checkbox">
+            <span>Оранжевый</span>
+        </label>
+        <h3>ЦВЕТ</h3>
+        <label class="custom-checkbox">
+            <input type="checkbox">
+            <span>Зеленый</span>
+        </label>
+        <label class="custom-checkbox">
+            <input type="checkbox">
+            <span>Белый</span>
+        </label>
+        <label class="custom-checkbox">
+            <input type="checkbox">
+            <span>Черный</span>
+        </label>
+        <label class="custom-checkbox">
+            <input type="checkbox">
+            <span>Мужское</span>
+        </label>
+        <label class="custom-checkbox">
+            <input type="checkbox">
+            <span>Желтый</span>
+        </label>
+        <label class="custom-checkbox">
+            <input type="checkbox">
+            <span>Фиолетовый</span>
+        </label>
+
+    </div>
+
+    <button class="apply-btn">ПРИМЕНИТЬ ФИЛЬТРЫ</button>
+
+</div>
+
+<script>
+    const openBtn = document.querySelector('.filter-open-btn');
+    const closeBtn = document.querySelector('#filterClose');
+    const panel   = document.querySelector('#filterPanel');
+    const overlay = document.querySelector('#filterOverlay');
+
+    openBtn.onclick = () => {
+        panel.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow = "hidden"; // блокируем прокрутку
+    }
+
+    const closePanel = () => {
+        panel.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = "";
+    }
+
+    closeBtn.onclick = closePanel;
+    overlay.onclick = closePanel;
+</script>
 </body>
 </html>

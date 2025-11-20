@@ -1,0 +1,161 @@
+.filter-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 993;
+}
+
+.filter-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.filter-panel {
+    position: fixed;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.filter-panel.active {
+    left: 0;
+}
+
+.filter-header {
+    font-family: PaluiSP, sans-serif;
+    background: #3B71B7;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-header h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.filter-close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.filter-content {
+    padding: 20px;
+}
+
+.filter-content h3 {
+    font-family: PaluiSP, sans-serif;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-box input {
+    width: 100px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+}
+
+.size-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.size-item {
+    font-family: VisbySemibold, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3B71B7;
+    padding: 15px;
+    color: white;
+}
+
+/* чекбоксы */
+.filter-content label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* кнопка снизу */
+.apply-btn {
+    font-family: PaluiSP, sans-serif;
+    margin-top: auto;
+    padding: 15px;
+    width: 100%;
+    background: #F39200;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* скрываем настоящий чекбокс */
+.custom-checkbox input {
+    display: none;
+}
+
+/* рисуем квадрат */
+.custom-checkbox span {
+    position: relative;
+    padding-left: 35px;
+    font-family: VisbySemibold, sans-serif;
+}
+
+/* сам квадрат */
+.custom-checkbox span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #999999;
+    background: white;
+    transition: 0.2s;
+}
+
+/* выбранный — красим */
+.custom-checkbox input:checked + span::before {
+    background: #F39200;  /* СИНИЙ, как на твоём макете */
+    border-color: #F39200;
+}

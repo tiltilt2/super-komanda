@@ -1,20 +1,27 @@
 .footer {
-    width: 100%;                 /* фон на всю ширину */
+    width: 100%;                 
     background-color: #3B71B7;
     color: #fff;
 }
 
 .footer-container {
-    max-width: 1500px;           /* ширина контента */
+    max-width: 1500px;          
     width: 100%;
-    margin: 0 auto;              /* по центру */
+    margin: 0 auto;             
 }
-
-
 .up-footer {
     display: flex;
     justify-content: space-between;
-    padding: 60px 100px;
+    padding: 60px 0px;
+    background-color: #3B71B7;
+    width: 100%; 
+}
+.up-footer-container {
+    max-width: 1500px;          
+    width: 100%;
+    margin: 0 auto;              
+    display: flex;
+    justify-content: space-between;
 }
 
 .left-footer {
@@ -62,6 +69,7 @@
 
 .right-footer div li {
     margin: 10px 0;
+    list-style-type: none;
     cursor: pointer;
     font-size: 16px;
     transition: 0.3s;
@@ -69,18 +77,18 @@
 
 
 .down-footer-container {
-    max-width: 1500px;           /* ширина контента */
+    max-width: 1500px;           
     width: 100%;
-    margin: 0 auto;              /* по центру */
+    margin: 0 auto;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    font-size: 14px;           
 }
 .down-footer {
     width: 100%;    
     background-color: #F39200;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 100px;
-    font-size: 14px;
 }
 
 .down-footer img {
@@ -94,9 +102,11 @@
 }
 
 .head {
+    width: 100%;
+    margin: 0 auto; 
     background-color: #3B71B7;
     display: flex;
-    gap: 200px;
+    gap: 500px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -104,12 +114,13 @@
     z-index: 1;
     position: fixed;
     width: 100%;
-    .head-menu {
-        ul {
-        display: flex;
-        list-style-type: none;
-        gap: 45px;
-        text-transform: capitalize;
+}
+.head-menu {
+    ul {
+    display: flex;
+    list-style-type: none;
+    gap: 45px;
+    text-transform: capitalize;
         }
     }
     a {
@@ -137,4 +148,4 @@
         transition-duration: 1s;
         transition-property: opacity, visibility;
     } 
-}
+
