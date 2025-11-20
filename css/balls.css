@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "VisbyBold"; 
+  src: url("../font/VisbyBold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "VisbyHeavy"; 
+  src: url("../font/VisbyHeavy.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "VisbySemibold"; 
+  src: url("../font/VisbySemibold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "PaluiSP"; 
+  src: url("../font/PaluiSPDemo-Bold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+main{
+    background-image: url(../img/background/background_black.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    font-family: "VisbyBold", sans-serif;
+}
+
+.width{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 1500px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+.more-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  margin-top: 104px;
+  color: #fbfbfb;
+  display: flex;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: -30px; 
+  /* соре подругому никак */
+}
+
+.nav-item {
+  list-style: none;
+  cursor: default;
+}
+
+.nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #3b71b7;
+}
+
+.title-catalog {
+  font-size: 65px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
+  color: #fbfbfb;
+}
+
+.filters {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.filter-open-btn {
+  width: 360px;
+  height: 70px;
+  font-size: 16px;
+  color: #fbfbfb;
+  background-color: #3b71b7;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: background-color 0.7s;
+}
+
+.load-more-btn {
+
+  width: 263px;
+  height: 35px;
+  font-size: 16px;
+  color: #fbfbfb;
+  background-color: #191919;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
+  border: 1px solid #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: background-color 0.7s;
+  margin-bottom: 100px;
+}
+
+.btn-down{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn-all-filters:hover {
+  background-color: #f39200;
+}
+
+.btn-all-filters-img {
+  width: 20px;
+  height: 20px;
+}
+
+.filters select {
+  width: 427px;
+  height: 70px;
+  font-size: 16px;
+  color: #fbfbfb;
+  background-color: #3b71b7;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
+  border: none;
+  outline: none;
+  text-align: center;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../img//icons/arrow_down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 19px;
+  padding-right: 20px;
+}

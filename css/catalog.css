@@ -11,11 +11,17 @@
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   font-family: "Inter", sans-serif;
   background-color: #191919;
   color: #fbfbfb;
 }
+.main-catalog{
+  margin-top: 200px;
+  margin-bottom: 200px;
 
+}
 main {
   width: 1160px;
 }
@@ -110,23 +116,21 @@ main {
 
 .cards {
   display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(2, 560px);
+  gap: 40px 36px;
   width: 100%;
+  max-width: 1000px;
   margin-bottom: 40px;
+  margin:0;
 }
 
 .card {
-  width: 260px;
-  background-color: #fbfbfb;
-  position: relative;
-  overflow: hidden;
-  padding: 15px 19px;
-  box-sizing: border-box;
-  color: #191919;
+  width: 560px;
   display: flex;
   flex-direction: column;
+  background: transparent;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .card-inner {
@@ -135,23 +139,33 @@ main {
   position: relative;
 }
 
+.card-inner::after {
+  content: "";
+  display: block;
+}
+
 .card-description {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  margin: 15px 0;
+  padding: 16px 18px;
+  background: #ffffff;
 }
 
 .card-title {
-  width: 160px;
-  font-size: 16px;
-  text-align: left;
+  width: 320px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
+  letter-spacing: 2px;
+  color: #191919;
 }
 
 .card-price {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
+  color: #191919;
 }
 
 .not-available {
@@ -197,19 +211,19 @@ main {
 
 .swiper {
   width: 100%;
-  height: 181px;
+  height: 240px;
   border: none;
 }
 
 .card-img-slide {
   width: 100%;
-  height: 181px;
+  height: 240px;
   object-fit: cover;
   object-position: center;
 }
 
 .card .swiper-pagination-bullet {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.7);
 }
 
 .card .swiper-pagination-bullet-active {
@@ -220,16 +234,43 @@ main {
   filter: grayscale(100%) brightness(0.6);
 }
 
+.card.not-available::after {
+  content: "Нет в наличии";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.85);
+  color: #191919;
+  font-family: "PaluiSP", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 .card-rating {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   position: absolute;
-  top: 8px;
-  left: 8px;
-  z-index: 10;
-  color: #fbfbfb;
-  font-size: 16px;
+  top: 12px;
+  left: 12px;
+  z-index: 20;
+  color: #ffffff;
+  font-size: 14px;
+  background: rgba(0,0,0,0.45);
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1040px) {
+  .cards {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+  .card {
+    width: 100%;
+  }
 }
 
 .load-more-products {

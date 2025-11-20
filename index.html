@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <title>Каталог</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footerheader.css">
+    <title>Главная страница</title>
 </head>
 <body>
-    <header class="head">
-        <div class="head-left">
-            <img src="img/icons/Logo.svg" alt="челбаскет"  width="100px">
+    <header class="header">
+    <div class="container">
+        <div class="header-left">
+            <img src="/img/icons/Logo.svg" alt="logo" class="logo">
         </div>
-        <div class="head-menu">
+
+        <nav class="header-menu">
             <ul>
-                <li>Главная</li>
-                <li class="drop-menu">
-                    <a href="#">Каталог <img src="img/icons/arrow_down.svg" alt=""></a>
-                    <ul>
-                        <li><a href="">Футболки</a></li>
-                        <li><a href="">Майки</a></li>
+                <li><a class="link" href="index.html">Главная</a></li>
+
+                <li class="dropdown">
+                    <a class="link" href="catalog.html">Каталог <img src="/img/icons/arrow_down.svg" alt="arrow" width="25px"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Футболки</a></li>
+                        <li><a href="#">Майки</a></li>
+                        <li><a href="balls.html">Мячи</a></li>
                         <li><a href="#">Кофты</a></li>
-                        <li><a href="#">Мячи</a></li>
                         <li><a href="#">Сувениры</a></li>
-                    </ul></li>
+                    </ul>
                 </li>
+
             </ul>
+        </nav>
+
+        <div class="header-right">
+            <a href=><img src="/img/icons/search.svg" alt="search"></a>    
+            <a href="basket.html"><img src="/img/icons/basket.svg" alt="bag"></a>
+            <a href="user.html"><img src="/img/icons/user.svg" alt="user"></a>
         </div>
-        <div class="head-right">
-            <img src="img/icons/search.svg" alt="поиск">
-            <img src="img/icons/basket.svg" alt="корзина">
-            <img src="img/icons/user.svg" alt="профиль">
-        </div>
+    </div>
     </header>
     <main class="main">
         <div class="intro">
@@ -61,7 +67,7 @@
                     <img src="" width="560" height="584" alt="мужчина">
                 </aside>
             </div>
-            <button>узнать подробнее</button>
+            <a href="new_collection.html">узнать подробнее</a>
         </div>
         <div class="season-form">
             <div>
@@ -94,8 +100,9 @@
             <marquee direction="right" scrollamount="25">челбаскет · челбаскет · челбаскет</marquee>
         </div>
     </main>
-    <footer class="footer">
+        <footer class="footer">
         <div class="up-footer">
+            <div class="up-footer-container">
             <div class="left-footer">
                 <img src="img/icons/Logo.svg" alt="logo">
                 <p>Станьте тем, кто первый узнает об обновлениях в коллекциях</p>
@@ -120,18 +127,21 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="down-footer">
-            <div>
-                <p>2025</p>
-            </div>
-            <div class="under">
-                <p>Политика конфиденциальности</p>
-            </div>
-            <div>
-                <img src="img/icons/vk.svg" alt="vk">
-                <img src="img/icons/youtube.svg" alt="youtube">
-                <img src="img/icons/tg.svg" alt="tg">
-            </div>
+            <div class="down-footer-container">
+                <div>
+                    <p>2025</p>
+                </div>
+                <div class="under">
+                    <p>Политика конфиденциальности</p>
+                </div>
+                <div>
+                    <img src="img/icons/vk.svg" alt="vk">
+                    <img src="img/icons/youtube.svg" alt="youtube">
+                    <img src="img/icons/tg.svg" alt="tg">
+                </div>
+            </div>  
         </div>
     </footer>
 </body>

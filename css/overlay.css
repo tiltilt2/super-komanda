@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     transition: 0.3s ease;
-    z-index: 999;
+    z-index: 99999;
     overflow-y: auto;
 }
 
@@ -37,7 +37,7 @@
 .filter-header {
     font-family: PaluiSP, sans-serif;
     background: #3B71B7;
-    padding: 20px;
+    padding: 47px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,17 +99,14 @@
     color: white;
 }
 
-/* чекбоксы */
 .filter-content label {
     display: block;
     margin-bottom: 10px;
     font-size: 18px;
 }
 
-/* кнопка снизу */
 .apply-btn {
     font-family: PaluiSP, sans-serif;
-    margin-top: auto;
     padding: 15px;
     width: 100%;
     background: #F39200;
@@ -129,19 +126,16 @@
     margin-bottom: 10px;
 }
 
-/* скрываем настоящий чекбокс */
 .custom-checkbox input {
     display: none;
 }
 
-/* рисуем квадрат */
 .custom-checkbox span {
     position: relative;
     padding-left: 35px;
     font-family: VisbySemibold, sans-serif;
 }
 
-/* сам квадрат */
 .custom-checkbox span::before {
     content: "";
     position: absolute;
@@ -154,8 +148,7 @@
     transition: 0.2s;
 }
 
-/* выбранный — красим */
 .custom-checkbox input:checked + span::before {
-    background: #F39200;  /* СИНИЙ, как на твоём макете */
+    background: #F39200;  
     border-color: #F39200;
 }
