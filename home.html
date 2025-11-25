@@ -14,10 +14,12 @@
         </div>
         <div class="head-menu">
             <ul>
-                <li>Главная</li>
+                <li class="li-margin">Главная</li>
                 <li class="drop-menu">
-                    <a href="#">Каталог <img src="img/icons/arrow_down.svg" alt=""></a>
-                    <ul>
+                    <div class="catalog-menu li-margin">
+                        <a href="#" >Каталог <img src="img/icons/arrow_down.svg" alt="" width="19" height="11" class="menu-arrow"></a>
+                    </div>
+                    <ul class="catalog-menu-list">
                         <li><a href="">Футболки</a></li>
                         <li><a href="">Майки</a></li>
                         <li><a href="#">Кофты</a></li>
@@ -36,62 +38,150 @@
     <main class="main">
         <div class="intro">
             <p>Официальный магазин бк</p>
-            <h1 class="bold">бк челбаскет</h1>
-            <!-- <button>к покупкам <img src="" alt="стрелка"></button> -->
+            <h1 class="bold">челбаскет</h1>
         </div>
-        <div class="run-line">
-            <marquee direction="right" scrollamount="25">челбаскет · 16 ноября 2025 </marquee>
-        </div>
-        <!-- <div class="block-cards">
-            <div class="cards-slider">
+        <div class="marquee">
+                <div class="marquee__inner">
+                    <span class="font_visby">16 НОЯБРЯ 2025</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span>ЧЕЛБАСКЕТ</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span class="font_visby">16 НОЯБРЯ 2025</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span>ЧЕЛБАСКЕТ</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                </div>
 
-            </div>
-            <h3>баскетбольный клуб · челябинск</h3>
-            <h1>челбаскет</h1>
-        </div> -->
+                <div class="marquee__inner">
+                    <span class="font_visby"> 16 НОЯБРЯ 2025</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span>ЧЕЛБАСКЕТ</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span class="font_visby">16 НОЯБРЯ 2025</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span>ЧЕЛБАСКЕТ</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span></span>
+                </div>
+
+                <div class="marquee__inner">
+                    <span class="font_visby">16 НОЯБРЯ 2025</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span>ЧЕЛБАСКЕТ</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span class="font_visby">16 НОЯБРЯ 2025</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span>ЧЕЛБАСКЕТ</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span></span>
+                </div>
+
+                <div class="marquee__inner">
+                    <span class="font_visby"> 16 НОЯБРЯ 2025</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span>ЧЕЛБАСКЕТ</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span class="font_visby">16 НОЯБРЯ 2025</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span>ЧЕЛБАСКЕТ</span>
+                    <img src="img/home/basketball.png" class="icon" />
+                    <span></span>
+                </div>
+        </div>
         <div class="new-collection">
-            <div>
-                <aside>
+            <div class="block-info">
+                <div class="column">
                     <h3>новая коллекция</h3>
-                    <p>Официальный мерч</p>
-                    <p>Сезон 25-26</p>
-                    <img src="" width="560" height="386" alt="мужчина с кофтой">
-                </aside>
-                <aside>
-                    <img src="" width="560" height="584" alt="мужчина">
-                </aside>
+                    <div class="new-collection-info">
+                        <h4>Официальный мерч</h4>
+                        <h4><span class="orange">Сезон 25-26</span></h4>
+                    </div>
+                    <img src="img/home/1-1.png" width="560" height="386" alt="мужчина с кофтой">
+                </div>
+                <div class="column">
+                    <img src="img/home/1-2.png" width="560" height="584" alt="мужчина">
+                </div>
             </div>
             <button>узнать подробнее</button>
         </div>
         <div class="season-form">
-            <div>
-                <aside>
-                    <img src="" width="560" height="575" alt="мужчина в форме показывает сап">
-                    <img src="" width="560" height="371" alt="много мужиков в форме">
-                </aside>
-                <aside>
-                    <h3>сезонная форма</h3>
-                    <p>25-26 мерч</p>
+            <div class="block-info">
+                <div class="column season-form-left">
+                    <img src="img/home/2-1.png" width="560" height="575" alt="мужчина в форме показывает сап">
+                    <img src="img/home/2-2.png" width="560" height="371" alt="много мужиков в форме">
+                </div>
+                <div class="column">
+                    <div class="season-form-info"> 
+                        <h3>сезонная форма</h3>
+                        <span class="orange"><h4>25-26</h4></span>
+                    </div>
                     <p>Пошив по индвидуальным размерам и возможностью нанесения фамилии и номера</p>
-                    <img src="" width="560" height="750" alt="мужчина в форме">
-                </aside>
+                    <img src="img/home/2-3.png" width="560" height="750" alt="мужчина в форме">
+                </div>
             </div>
             <button>узнать подробнее</button>
         </div>
-        <!-- <div class="leaders">
-            <h3>лидеры продаж</h3>
-            <button>в магазин</button>
-        </div> -->
         <div class="block-cards">
-            <div class="cards-slider">
+            <div class="block-cards-left">
+                <h3>наши товары</h2>
+                <button><img src="img/home/change.png" alt=""></button>
+            </div>
+            <div class="block-cards-right">
+                <div class="cards-up">
+                    <div class="card">
+                        <div class="up">
+                            <div class="rating">
+                                <span>5</span><img class="star" src="img/icons/star.svg" alt="">
+                            </div>
+                            <div class="edit">
+                                <img src="img/icons/edit.svg" alt="edit">
+                            </div>
+                        </div>
+                        <img class="card-image" src="img/ball_icanplay.svg" alt="Товар" />
+                        <div class="desc">
+                            <p class="title">Футболка «Космос»</p>
+                            <p class="price">1750₽</p>
+                        </div>
+                        <a href="#" class="button">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <div class="rating">
+                            <span>4,9</span><img class="star" src="img/icons/star.svg" alt="">
+                        </div>
+                        <img class="card-image" src="img/ball_icanplay.svg" alt="Товар" />
+                        <div class="desc">
+                            <p class="title">Футболка «Созвездие»</p>
+                            <p class="price">1900₽</p>
+                        </div>
+                        <a href="#" class="button">В корзину</a>
+                    </div>
+                </div>
+                <div class="cards-down">
+                    <div class="card">
+                        <div class="rating">
+                            <span>4,9</span><img class="star" src="img/icons/star.svg" alt="">
+                        </div>
+                        <img class="card-image" src="img/ball_icanplay.svg" alt="Товар" />
+                        <div class="desc">
+                            <p class="title">Футболка «Ракета»</p>
+                            <p class="price">2100₽</p>
+                        </div>
+                        <a href="#" class="button">В корзину</a>
+                    </div>
+                    <div class="card">
+                        <div class="rating">
+                            <span>5</span><img class="star" src="img/icons/star.svg" alt="">
+                        </div>
+                        <img class="card-image" src="img/ball_icanplay.svg" alt="Товар" />
+                        <div class="desc">
+                            <p class="title">Футболка «Млечный путь»</p>
+                            <p class="price">2300₽</p>
+                        </div>
+                        <a href="#" class="button">В корзину</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-        <div class="souvenirs">
-            <h3>сувениры</h3>
-            <button>в магазин</button>
-        </div>
-        <div class="run-line">
-            <marquee direction="right" scrollamount="25">челбаскет · челбаскет · челбаскет</marquee>
         </div>
     </main>
     <footer class="footer">
