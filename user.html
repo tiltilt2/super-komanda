@@ -1,89 +1,147 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/footerheader.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/user.css" />
     <title>Профиль пользователя</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-    <div class="container">
+      <div class="container">
         <div class="header-left">
-            <img src="/img/icons/Logo.svg" alt="logo" class="logo">
+          <img src="/img/icons/Logo.svg" alt="logo" class="logo" />
         </div>
 
         <nav class="header-menu">
-            <ul>
-                <li><a class="link" href="index.html">Главная</a></li>
+          <ul>
+            <li><a class="link" href="index.html">Главная</a></li>
 
-                <li class="dropdown">
-                    <a class="link" href="catalog.html">Каталог <img src="/img/icons/arrow_down.svg" alt="arrow" width="25px"></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Футболки</a></li>
-                        <li><a href="#">Майки</a></li>
-                        <li><a href="balls.html">Мячи</a></li>
-                        <li><a href="#">Кофты</a></li>
-                        <li><a href="#">Сувениры</a></li>
-                    </ul>
-                </li>
-
-            </ul>
+            <li class="dropdown">
+              <a class="link" href="catalog.html"
+                >Каталог
+                <img src="/img/icons/arrow_down.svg" alt="arrow" width="25px"
+              /></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Футболки</a></li>
+                <li><a href="#">Майки</a></li>
+                <li><a href="balls.html">Мячи</a></li>
+                <li><a href="#">Кофты</a></li>
+                <li><a href="#">Сувениры</a></li>
+              </ul>
+            </li>
+          </ul>
         </nav>
 
         <div class="header-right">
-            <a href=><img src="/img/icons/search.svg" alt="search"></a>    
-            <a href="basket.html"><img src="/img/icons/basket.svg" alt="bag"></a>
-            <a href="user.html"><img src="/img/icons/user.svg" alt="user"></a>
+          <a href=""><img src="/img/icons/search.svg" alt="search" /></a>
+          <a href="basket.html"
+            ><img src="/img/icons/basket.svg" alt="bag"
+          /></a>
+          <a href="user.html"><img src="/img/icons/user.svg" alt="user" /></a>
         </div>
-    </div>
+      </div>
     </header>
-    <main>
+    <main class="main">
+      <h2 class="main-title">Личный кабинет</h2>
 
+      <div class="main-navigation">
+        <a href="history_of_orders.html"
+          ><button class="btn-history">История заказов</button></a
+        >
+        <a href="#"><button class="btn-status">Статус заказа</button></a>
+      </div>
+
+      <div class="blocks">
+        <div class="personal-information">
+          <h3 class="blocks-title">Личная информация</h3>
+
+          <div class="information-users">
+            <div class="information-user">
+              <p class="blocks-text">Иван Иванов Иванович</p>
+              <button onclick="" class="blocks-btn">
+                <img src="img/icons/edit.svg" alt="edit" />
+              </button>
+            </div>
+            <div class="information-user">
+              <p class="blocks-text">01.01.2000</p>
+              <button onclick="" class="blocks-btn">
+                <img src="img/icons/edit.svg" alt="edit" />
+              </button>
+            </div>
+            <div class="information-user">
+              <p class="blocks-text">email_pochta@gmail.com</p>
+              <button onclick="" class="blocks-btn">
+                <img src="img/icons/edit.svg" alt="edit" />
+              </button>
+            </div>
+            <div class="information-user">
+              <p class="blocks-text">+7 999 123-45-67</p>
+              <button onclick="" class="blocks-btn">
+                <img src="img/icons/edit.svg" alt="edit" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="address">
+          <h3 class="blocks-title">Адреса</h3>
+          <div class="information-address">
+            <p class="blocks-text">
+              Россия, г. Город, ул. Уличная, д. 1, кв. 1
+            </p>
+            <p class="blocks-text">
+              Россия, г. Город, ул. Уличная, д. 1а, кв. 2
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
-        <div class="up-footer">
-            <div class="up-footer-container">
-            <div class="left-footer">
-                <img src="/img/icons/Logo.svg" alt="logo">
-                <p>Станьте тем, кто первый узнает об обновлениях в коллекциях</p>
-                <input class="footer-input-text" type="text" placeholder="E-mail">
-                <p class="label-input">Указывая E-mail вы соглашаетесь бла бла бла </p>
-                <input class="footer-btn" type="submit" value="ПОДПИСАТЬСЯ">
+      <div class="up-footer">
+        <div class="up-footer-container">
+          <div class="left-footer">
+            <img src="/img/icons/Logo.svg" alt="logo" />
+            <p>Станьте тем, кто первый узнает об обновлениях в коллекциях</p>
+            <input class="footer-input-text" type="text" placeholder="E-mail" />
+            <p class="label-input">
+              Указывая E-mail вы соглашаетесь бла бла бла
+            </p>
+            <input class="footer-btn" type="submit" value="ПОДПИСАТЬСЯ" />
+          </div>
+          <div class="right-footer">
+            <div>
+              <li>Способы оплаты</li>
+              <li>Статус заказа</li>
+              <li>Возвраты</li>
+              <li>Подарочные карты</li>
+              <li>Покупателям</li>
             </div>
-             <div class="right-footer">
-                <div>
-                    <li>Способы оплаты</li>
-                    <li>Статус заказа</li>
-                    <li>Возвраты</li>
-                    <li>Подарочные карты</li>
-                    <li>Покупателям</li>
-                </div>
-                <div>
-                    <li>Футболки</li>
-                    <li>Майки</li>
-                    <li>Кофты</li>
-                    <li>Мячи</li>
-                    <li>Сувениры</li>
-                </div>
+            <div>
+              <li>Футболки</li>
+              <li>Майки</li>
+              <li>Кофты</li>
+              <li>Мячи</li>
+              <li>Сувениры</li>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="down-footer">
+        <div class="down-footer-container">
+          <div>
+            <p>2025</p>
+          </div>
+          <div class="under">
+            <p>Политика конфиденциальности</p>
+          </div>
+          <div>
+            <img src="/img/icons/vk.svg" alt="vk" />
+            <img src="/img/icons/youtube.svg" alt="youtube" />
+            <img src="/img/icons/tg.svg" alt="tg" />
+          </div>
         </div>
-        <div class="down-footer">
-            <div class="down-footer-container">
-                <div>
-                    <p>2025</p>
-                </div>
-                <div class="under">
-                    <p>Политика конфиденциальности</p>
-                </div>
-                <div>
-                    <img src="/img/icons/vk.svg" alt="vk">
-                    <img src="/img/icons/youtube.svg" alt="youtube">
-                    <img src="/img/icons/tg.svg" alt="tg">
-                </div>
-            </div>  
-        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

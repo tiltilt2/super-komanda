@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #191919;
+}
+
+@font-face {
+  font-family: "PaluiSP";
+  src: url("../font/PaluiSPDemo-Bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "VisbyBold";
+  src: url("../font/VisbyBold.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "VisbyHeavy";
+  src: url("../font/VisbyHeavy.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "VisbySemibold";
+  src: url("../font/VisbySemibold.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #3b71b7;
+  z-index: 1000;
+  font-family: "PaluiSP", sans-serif;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.header-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.link::after {
+  position: absolute;
+  text-decoration: none;
+  content: "";
+  bottom: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: 0.3s;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.link:hover::after {
+  width: 100%;
+  text-decoration: none;
+}
+
+.header-menu li {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s ease-in-out;
+  gap: 0 !important;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(158, 158, 158);
+}
+
+.dropdown-menu li a {
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.dropdown-menu li:hover {
+  background: #f39200;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-right img {
+  width: 28px;
+  cursor: pointer;
+}
+
+.link img {
+  transition: transform 0.3s ease;
+}
+
+.link:hover img {
+  transform: rotate(180deg);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding-top: 290px;
+}
+
+.main-navigation {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-autorisation {
+  width: 98px;
+  height: 35px;
+  background-color: transparent;
+  border: 1px solid #fbfbfb;
+  font-size: 16px;
+  color: #fbfbfb;
+  font-family: "PaluiSP", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-registration:hover {
+  background-color: transparent;
+  border: 1px solid #fbfbfb;
+}
+
+.btn-registration {
+  width: 230px;
+  height: 35px;
+  background-color: #3b71b7;
+  border: none;
+  color: #fbfbfb;
+  font-size: 16px;
+  font-family: "PaluiSP", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-autorisation:hover {
+  background-color: #3b71b7;
+  border: none;
+}
+
+.main-form {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-text {
+  width: 560px;
+  height: 32px;
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #8a8a8a;
+  outline: none;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+
+::placeholder {
+  color: #515151;
+  font-family: "VisbyBold", sans-serif;
+  font-size: 24px;
+}
+
+.input-button {
+  width: 560px;
+  height: 45px;
+  background-color: #f39200;
+  color: #fbfbfb;
+  font-size: 16px;
+  font-family: "PaluiSP", sans-serif;
+  cursor: pointer;
+  transition: 0.5s;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 15px;
+}
+
+.input-button:hover {
+  background-color: #3b71b7;
+}
+
+.agreement {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  color: #8a8a8a;
+  font-family: "VisbySemibold", sans-serif;
+  font-size: 16px;
+  margin-top: 47px;
+  margin: 47px 0 40px 0;
+}
+
+.agreement input[type="checkbox"] {
+  flex-shrink: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fbfbfb;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  top: 4px;
+  outline: none;
+}
+
+.agreement input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 1px;
+  width: 8px;
+  height: 16px;
+  border: solid #f39200;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
+
+.warning-text {
+  color: #8a8a8a;
+  font-family: "VisbySemibold", sans-serif;
+  font-size: 16px;
+}
+
+/* (320px, 768px, 1024px) */
+
+@media (max-width: 768px) {
+  .main {
+    gap: 80px;
+    padding-top: 290px;
+  }
+
+  .main-navigation {
+    gap: 10px;
+  }
+
+  .btn-autorisation {
+    width: 98px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .btn-registration {
+    width: 230px;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .main-form {
+    width: 500px;
+  }
+
+  .input-text {
+    width: 500px;
+    height: 32px;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  ::placeholder {
+    font-size: 24px;
+  }
+
+  .input-button {
+    width: 500px;
+    height: 45px;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .agreement {
+    gap: 15px;
+    font-size: 16px;
+    margin: 47px 0 40px 0;
+  }
+
+  .agreement input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    top: 4px;
+  }
+
+  .agreement input[type="checkbox"]:checked::after {
+    left: 9px;
+    top: 1px;
+    width: 8px;
+    height: 16px;
+    border-width: 0 4px 4px 0;
+  }
+
+  .warning-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 568px) {
+  .main {
+    gap: 80px;
+    padding-top: 200px;
+  }
+
+  .main-navigation {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-autorisation {
+    width: 98px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .btn-registration {
+    width: 230px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .main-form {
+    width: 320px;
+  }
+
+  .input-text {
+    width: 320px;
+    height: 32px;
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  ::placeholder {
+    font-size: 20px;
+  }
+
+  .input-button {
+    width: 320px;
+    height: 45px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .agreement {
+    gap: 15px;
+    font-size: 14px;
+    margin: 47px 0 40px 0;
+  }
+
+  .agreement input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    top: 4px;
+  }
+
+  .agreement input[type="checkbox"]:checked::after {
+    left: 9px;
+    top: 1px;
+    width: 8px;
+    height: 16px;
+    border-width: 0 4px 4px 0;
+  }
+
+  .warning-text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main {
+    gap: 80px;
+    padding-top: 170px;
+  }
+
+  .main-navigation {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-autorisation {
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .btn-registration {
+    width: 210px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .main-form {
+    width: 300px;
+  }
+
+  .input-text {
+    width: 300px;
+    height: 28px;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  ::placeholder {
+    font-size: 18px;
+  }
+
+  .input-button {
+    width: 300px;
+    height: 35px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .agreement {
+    gap: 15px;
+    font-size: 12px;
+    margin: 28px 0 20px 0;
+  }
+
+  .agreement input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+    top: 4px;
+  }
+
+  .agreement input[type="checkbox"]:checked::after {
+    left: 7px;
+    top: 1px;
+    width: 6px;
+    height: 14px;
+    border-width: 0 4px 4px 0;
+  }
+
+  .warning-text {
+    font-size: 12px;
+    text-align: center;
+  }
+}

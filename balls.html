@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/footerheader.css">
     <link rel="stylesheet" href="css/balls.css">
-    <link rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/card_for_copy.css">
+    <link rel="stylesheet" href="css/overlay.css">
     <title>Мячи</title>
 </head>
 <body>
@@ -50,17 +50,25 @@
                 <li class="nav-item">Каталог</li>
             </ul>
             </nav>
-            <h2 class="title-catalog">Мячи</h2>
+           <h2 class="title-catalog">Мячи</h2>
                 <div class="filters">
                         <button class="filter-open-btn">
                         Все фильтры
                         <img src="img/icons/icons_filter.svg" alt="фильтры" class="filter-open-btn-img"/>
                         </button>
-                    <select name="sort-price" id="sort-price">
-                        <option value="price-asc">по наибольшей цене</option>
-                        <option value="price-desc">по наименьшей цене</option>
-                        <option value="available">сначала в наличии</option>
-                    </select>
+                    <div class="filter-dropdown">
+                        <div class="filter-btn">
+                            ПО НАИБОЛЬШЕЙ ЦЕНЕ
+                            <img src="/img/icons/arrow_down.svg" alt="arrow">
+                        </div>
+
+                        <ul class="filter-menu">
+                            <li><a href="#">ПО НАИБОЛЬШЕЙ ЦЕНЕ</a></li>
+                            <li><a href="#">ПО НАИМЕНЬШЕЙ ЦЕНЕ</a></li>
+                            <li><a href="#">ПО РЕЙТИНГУ</a></li>
+                            <li><a href="#">ПО НОВИЗНЕ</a></li>
+                        </ul>
+                    </div>
                 </div>
         
        <div class="more-cards">
@@ -303,7 +311,6 @@
             </div>  
         </div>
     </footer>
-    <div class="filter-overlay" id="filterOverlay"></div>
 
     <div class="filter-panel" id="filterPanel">
 

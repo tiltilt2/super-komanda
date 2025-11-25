@@ -43,7 +43,7 @@ main{
 
 .cards{
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     max-width: 1500px;
     width: 100%;
@@ -143,33 +143,71 @@ main{
     justify-content: center;
     margin-top: 20px;
 }
-.btn-all-filters:hover {
-  background-color: #f39200;
+
+.filter-dropdown {
+    width: 430px;
+    position: relative;
+    font-family: "PaluiSP", sans-serif;
+    text-transform: uppercase;
+    z-index: 1000; 
 }
 
-.btn-all-filters-img {
-  width: 20px;
-  height: 20px;
+.filter-btn {
+    background: #3b71b7;
+    color: white;
+    padding: 29px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
 }
 
-.filters select {
-  width: 427px;
-  height: 70px;
-  font-size: 16px;
-  color: #fbfbfb;
-  background-color: #3b71b7;
-  text-transform: uppercase;
-  font-family: "PaluiSP", sans-serif;
-  border: none;
-  outline: none;
-  text-align: center;
+.filter-btn img {
+    width: 20px;
+    pointer-events: none;
+}
 
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("../img//icons/arrow_down.svg");
-  background-repeat: no-repeat;
-  background-position: right 20px center;
-  background-size: 19px;
-  padding-right: 20px;
+.filter-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    margin: 5px 0 0 0;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.filter-menu li {
+    border-bottom: 1px solid #ccc;
+}
+
+.filter-menu li:last-child {
+    border-bottom: none;
+}
+
+.filter-menu a {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.filter-menu li:hover {
+    background: #f39200;
+}
+
+.filter-dropdown:hover .filter-menu {
+    opacity: 1;
+    visibility: visible;
 }
