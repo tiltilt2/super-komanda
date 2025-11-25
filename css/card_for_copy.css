@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "VisbyBold"; 
+  src: url("../font/VisbyBold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "VisbyHeavy"; 
+  src: url("../font/VisbyHeavy.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "VisbySemibold"; 
+  src: url("../font/VisbySemibold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "PaluiSP"; 
+  src: url("../font/PaluiSPDemo-Bold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+.card {
+    background: #fff;
+    width: 300px;
+    padding: 15px 20px;
+    position: relative;
+    font-family: "VisbyBold", sans-serif;
+  }
+
+  .card-image{
+    width: 100%;
+  }
+
+  .rating {
+    position: absolute;
+    top: 23px;
+    left: 28px;
+    font-size: 20px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .edit {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin: 12px 0 4px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+  }
+
+  .card-button {
+    display: block;
+    width: 100%;
+    background: #3B71B7;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-top: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: 'PaluiSP', sans-serif;
+  }
+
+  .card-button-none {
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-top: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: 'PaluiSP', sans-serif;
+  }
+
+  .description {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description-none{
+    display: flex;
+    justify-content: space-between;
+    color: #8A8A8A;
+  }
+
+  .card-image-none{
+    width: 100%;
+    opacity: 0.5;
+  }

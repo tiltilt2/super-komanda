@@ -3,160 +3,300 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "PaluiSP";
+  src: url("../font/PaluiSPDemo-Bold.otf") format("opentype");
+}
+
 body {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   font-family: "Inter", sans-serif;
+  background-color: #191919;
+  color: #fbfbfb;
 }
+.main-catalog{
+  margin-top: 200px;
+  margin-bottom: 200px;
 
+}
 main {
   width: 1160px;
 }
 
+.nav-menu {
+  margin-top: 104px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 5px;
+  /* шрифт надо добавить */
+}
+
+.nav-item {
+  list-style: none;
+  cursor: default;
+}
+
+.nav-item a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-item a:hover {
+  color: #3b71b7;
+}
+
 .title-catalog {
-  font-size: 96px;
-  margin: 123px 0 36px 0;
+  font-size: 65px;
+  margin: 80px 0;
   font-weight: normal;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
 }
 
 .filters {
-  height: 78px;
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.btn-all-filters {
+  width: 360px;
+  height: 70px;
+  font-size: 16px;
+  color: #fbfbfb;
+  background-color: #3b71b7;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
+  border: none;
+  display: flex;
   align-items: center;
-  border-top: 2px solid #000000;
-  border-bottom: 2px solid #000000;
-  margin-bottom: 50px;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: background-color 0.7s;
+}
+
+.btn-all-filters:hover {
+  background-color: #f39200;
+}
+
+.btn-all-filters-img {
+  width: 20px;
+  height: 20px;
 }
 
 .filters select {
-  font-size: 25px;
+  width: 427px;
+  height: 70px;
+  font-size: 16px;
+  color: #fbfbfb;
+  background-color: #3b71b7;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
   border: none;
-  background-color: transparent;
-  cursor: pointer;
+  outline: none;
+  text-align: center;
+
   appearance: none;
-  background-image: url("../img/icons/arrow-down.svg");
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../img//icons/arrow_down.svg");
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 18px;
-  padding-inline-end: 28px;
-  width: fit-content;
-  outline: none;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  width: 360px;
-  border-left: 1px solid #000000;
-  height: 78px;
-}
-
-.search input {
-  width: 80%;
-  padding-left: 15px;
-  border: none;
-  outline: none;
-  font-size: 20px;
-  background-color: transparent;
-}
-
-::placeholder {
-  color: #000000;
-}
-
-.search-btn {
-  width: 60px;
-  height: 78px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search-btn img {
-  width: 37px;
-  height: 38.9px;
+  background-position: right 20px center;
+  background-size: 19px;
+  padding-right: 20px;
 }
 
 .cards {
   display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(2, 560px);
+  gap: 40px 36px;
   width: 100%;
-  margin-bottom: 130px;
+  max-width: 1000px;
+  margin-bottom: 40px;
+  margin:0;
 }
 
 .card {
-  width: 260px;
-  border: 2px solid #636363;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  padding: 15px;
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .card-inner {
-  width: 230px;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
+}
+
+.card-inner::after {
+  content: "";
+  display: block;
 }
 
 .card-description {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 15px;
+  padding: 16px 18px;
+  background: #ffffff;
 }
 
 .card-title {
-  font-size: 12px;
-  width: 131px;
-  text-align: left;
+  width: 320px;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
+  letter-spacing: 2px;
+  color: #191919;
 }
 
 .card-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #191919;
+}
+
+.not-available {
+  color: #8a8a8a;
+}
+
+.card-btn {
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  color: #fbfbfb;
+  background-color: #3b71b7;
+  border: none;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
+  transition: background-color 0.7s;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: #f39200;
+}
+
+.des-not-available {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.des-not-available p {
   font-size: 15px;
-  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
+  cursor: default;
+  color: #191919;
 }
 
 .product-img-slider {
   width: 100%;
-  margin-top: 30px;
 }
 
 .swiper {
   width: 100%;
-  height: 181px;
+  height: 240px;
   border: none;
 }
 
 .card-img-slide {
   width: 100%;
-  height: 181px;
+  height: 240px;
   object-fit: cover;
   object-position: center;
 }
 
 .card .swiper-pagination-bullet {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,0.7);
 }
 
 .card .swiper-pagination-bullet-active {
   background-color: #ffffff;
 }
 
-.no-results {
-  font-size: 18px;
-  color: #888;
-  text-align: center;
-  display: none;
+.card.not-available .swiper {
+  filter: grayscale(100%) brightness(0.6);
 }
 
-.favorite-btn {
+.card.not-available::after {
+  content: "Нет в наличии";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.85);
+  color: #191919;
+  font-family: "PaluiSP", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 20;
+  color: #ffffff;
+  font-size: 14px;
+  background: rgba(0,0,0,0.45);
+  padding: 6px 8px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1040px) {
+  .cards {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+.load-more-products {
+  text-align: center;
+}
+
+.btn-load-more-products {
+  width: 263px;
+  height: 35px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "PaluiSP", sans-serif;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #fbfbfb;
+  color: #fbfbfb;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.btn-load-more-products:hover {
+  border: 1px solid #3b71b7;
+  color: #3b71b7;
+}
+
+/* .favorite-btn {
   width: 18px;
   height: 16px;
   background: none;
@@ -188,4 +328,4 @@ main {
 
 .favorite-btn.active .favorite-active {
   opacity: 1;
-}
+} */

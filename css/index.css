@@ -1,0 +1,337 @@
+@font-face {
+  font-family: "RalewayRegular"; 
+  src: url("../font/PaluiSPDemo-Bold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+@font-face {
+  font-family: "VisbyBold"; 
+  src: url("../font/VisbyBold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "VisbyHeavy"; 
+  src: url("../font/VisbyHeavy.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "VisbySemibold"; 
+  src: url("../font/VisbySemibold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+body {
+    font-family: "RalewayRegular", sans-serif;
+}
+.bold {
+    font-weight: bold;
+}
+.orange {
+    color: #F39200;
+}
+.font_visby {
+    font-family: "VisbyBold", sans-serif;
+}
+
+.main {
+    background-color: #191919;
+    padding-bottom: 210px;
+    div {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .new-collection, .season-form {
+        flex-direction: column;
+        padding: 180px 0 200px;
+        align-items: center;
+    }
+    .new-collection {
+        padding: 180px 0 200px;
+    }
+    .season-form {
+        padding-top: 180px;
+    }
+    .marquee {
+        flex-direction: row;
+        padding-top: 88px;
+    }
+    background-image: url(/img/home/back-main.png);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100%;
+    
+}
+
+.intro {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 90px;
+    height: 741px;
+    width: 100%;
+    background-image: url("/img/home/back.svg");
+    background-color: #000000d8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    p {
+        font-size: 30px;
+        margin: 0;
+    }
+    h1 {
+        font-size: 100px;
+        margin: 13px 0;
+    }
+    button {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        text-transform: uppercase;
+    }
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.marquee__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    padding: 20px 0;
+    animation: scroll 10s linear infinite;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}  
+
+.new-collection, .season-form {
+    color: #ffffff;
+    gap: 40px;
+    .block-info {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .column {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 40px;
+        flex-direction: column;
+        max-width: 560px;
+        width: 100%;
+        h3, h4, p {
+            margin: 0;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        h3 {
+            width: 460px;
+        }
+        .new-collection-info, .season-form-info {
+            align-items: start;
+            margin: 0;
+            flex-direction: column;
+        }
+        h4, p {
+            text-transform: none;
+            font-family: "VisbyBold", sans-serif;
+        }
+    }
+    .season-form-left {
+        gap: 62px;
+    }
+    button {
+        width: 1160px;
+        height: 55px;
+        border: none;
+        border-radius: 0;
+        color: white;
+        background-color: #F39200;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: "RalewayRegular", sans-serif;
+        line-height: 16px;
+    }
+    button:hover {
+        background-color: #E94E1B;
+        cursor: pointer;
+    }
+}
+
+.block-cards {
+    align-items: start;
+    padding: 180px 0 200px;
+    padding-top: 180px;
+    gap: 300px;
+
+    .block-cards-left, .block-cards-right {
+        display: flex;
+        flex-direction: column;
+    }
+    .block-cards-left {
+        color: #fff;
+        gap: 260px;
+        button {
+            background: none;
+            border: none;
+            height: 202px;
+            width: 200px;
+
+            display: flex;
+            align-items: center;
+            background-image: url(/img/home/change.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all 0.2s;
+        }
+        button:hover {
+            background-image: url(/img/home/change-hover.png);
+        }
+    }
+    .block-cards-right {
+        gap: 40px;
+        .cards-up, .cards-down {
+            display: flex;
+            gap: 40px;
+        }
+    }
+    .cards-up {
+        padding-right: 100px;
+    }
+    .cards-down {
+        justify-content: end;
+    }
+    .card {
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+
+        font-family: "VisbyBold", sans-serif;
+        text-transform: capitalize;
+
+        width: 260px;
+        height: 100%;
+    }
+    .card:hover {
+        .card-image {
+            transform: scale(1.3);
+        }
+    }
+    h3 {
+        font-size: 30px;
+        font-weight: 700;
+        width: 160px;
+    }
+    .card-image{
+        object-fit: cover;
+        object-position: center;
+        width: 160px;
+        height: 196px;
+        padding-top: 15px;
+        transition: all 0.2s;
+    }
+
+    .up {
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+        .tooltip {
+            display: none;
+            position: absolute;
+            margin: -25px 0 0 -60px;
+            height: 16px;
+            padding: 2px;
+            background-color: #fff;
+            border: 0.5px solid black;
+            width: 110px;
+            text-align: center;
+            z-index: 2;
+            transition: all 0.3s;
+        }
+        .edit {
+            margin: 0;
+        }
+        .edit:hover {
+            .tooltip {
+                display: block;
+            }
+        }
+    }
+    .rating {
+        z-index: 1;
+        font-size: 16px;
+        color: #000;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        width: 220px;
+        display: flex;
+        justify-content: start;
+    }
+    .absolute {
+        position: absolute;
+    }
+    .desc {
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+        height: 35px;
+        p {
+            margin: 0;
+        }
+    }    
+    .button {
+        display: block;
+        width: 220px;
+        background: #3B71B7;
+        color: white;
+        text-align: center;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 10px 0;
+        margin-top: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-family: "RalewayRegular", sans-serif;
+        transition: all 0.2s;
+    }
+    .button:hover {
+        background-color: #3B4B6F;
+    }
+}
