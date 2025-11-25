@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "PaluiSP";
+  src: url("../font/PaluiSPDemo-Bold.otf") format("opentype");
+}
+
+
 main {
     width: 100%;
     display: flex;
@@ -17,6 +23,14 @@ main {
     justify-content: start;
     align-items: start;
     gap: 80px;
+}
+
+.headline {
+    font-size: 65px;
+    margin: 80px 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: "PaluiSP", sans-serif;
 }
 
 .basket {
@@ -100,6 +114,11 @@ main {
     .basket-order {
         width: 100%;
     }
+
+    .headline {
+        width: 100%;
+        font-size: 50px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -146,5 +165,10 @@ main {
 
     .basket-order {
         width: 100%;
+    }
+
+    .headline {
+        font-size: 20px;
+        margin: 20px 0px;
     }
 }
