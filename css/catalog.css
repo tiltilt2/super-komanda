@@ -2,11 +2,19 @@
   margin: 0;
   padding: 0;
 }
-
+main{
+    background-image: url(../img/background/background_black.svg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    font-family: "VisbyBold", sans-serif;
+}
 @font-face {
   font-family: "PaluiSP";
   src: url("../font/PaluiSPDemo-Bold.otf") format("opentype");
 }
+
 
 body {
   display: flex;
@@ -18,12 +26,17 @@ body {
   color: #fbfbfb;
 }
 .main-catalog{
-  margin-top: 200px;
-  margin-bottom: 200px;
+  width: 100%;
 
 }
-main {
-  width: 1160px;
+
+.width{
+  
+    max-width: max-content;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding: 0 20px;
+    margin-bottom: 200px;
 }
 
 .nav-menu {
@@ -119,7 +132,6 @@ main {
   grid-template-columns: repeat(2, 560px);
   gap: 40px 36px;
   width: 100%;
-  max-width: 1000px;
   margin-bottom: 40px;
   margin:0;
 }
@@ -263,7 +275,7 @@ main {
   border-radius: 4px;
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1200px) {
   .cards {
     grid-template-columns: 1fr;
     max-width: 480px;
