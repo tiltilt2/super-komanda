@@ -3,144 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- прошу разберитесь со стилями, сделайте отдальный файл с норм названием -->
     <link rel="stylesheet" href="css/footerheader.css">
     <link rel="stylesheet" href="css/card.css">
-    <title>Document</title>
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <title>Товар</title>
 </head>
 <body>
-   <header class="header">
-    <div class="container">
-        <div class="header-left">
-            <img src="/img/icons/Logo.svg" alt="logo" class="logo">
-        </div>
-
-        <nav class="header-menu">
-            <ul>
-                <li><a class="link" href="index.html">Главная</a></li>
-
-                <li class="dropdown">
-                    <a class="link" href="catalog.html">Каталог <img src="/img/icons/arrow_down.svg" alt="arrow" width="25px"></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Футболки</a></li>
-                        <li><a href="#">Майки</a></li>
-                        <li><a href="balls.html">Мячи</a></li>
-                        <li><a href="#">Кофты</a></li>
-                        <li><a href="#">Сувениры</a></li>
-                    </ul>
-                </li>
-
-            </ul>
-        </nav>
-
-        <div class="header-right">
-            <a href=><img src="/img/icons/search.svg" alt="search"></a>    
-            <a href="basket.html"><img src="/img/icons/basket.svg" alt="bag"></a>
-            <a href="user.html"><img src="/img/icons/user.svg" alt="user"></a>
-        </div>
-    </div>
-    </header>
-    <div class="content">
-        <div class="nav">Главная / Каталог / Футболки</div>
-        <div class="product-container">
-            <div class="product-slider">
-                <img src="img/mauka/mauka_black_1.jpg" alt="Футболка с логотипом">
+    <header class="header">
+        <div class="container">
+            <div class="header-left">
+                <img src="/img/icons/Logo.svg" alt="logo" class="logo">
             </div>
-            <div class="product-info">
-                <div class="product-heading">Футболка с логотипом</div>
-                
-                <div class="size-selector">
-                    <button class="size-button">XS <br> 40-42</button>
-                    <button class="size-button">S <br> 42-44</button>
-                    <button class="size-button">X <br> 44-46</button>
-                    <button class="size-button">M <br> 46-48</button>
-                    <button class="size-button">L <br> 48-50</button>
-                    <button class="size-button">XL <br> 50-52</button>
-                </div>
-                
-                <div class="interactive">
-                    <div class="description">
-                        <p>описание</p>
-                        <div class="description-text">
-                            <p>Дай понять, за кого бьется твое сердце!</p>
-                            <p>Эта футболка - символ твоей верности команде, а не просто одежда.</p>
-                            <p>Покажи, что ты - часть армии поклонников баскетбольного драйва: покоряй трибуны, покоряй город!</p>
+
+            <nav class="header-menu">
+                <ul>
+                    <li><a class="link" href="index.html">Главная</a></li>
+                    <li class="dropdown">
+                        <a class="link" href="catalog.html">Каталог <img src="/img/icons/arrow_down.svg" alt="arrow" width="25px"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Футболки</a></li>
+                            <li><a href="#">Майки</a></li>
+                            <li><a href="balls.html">Мячи</a></li>
+                            <li><a href="#">Кофты</a></li>
+                            <li><a href="#">Сувениры</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <a href="#"><img src="/img/icons/search.svg" alt="search"></a>    
+                <a href="basket.html"><img src="/img/icons/basket.svg" alt="bag"></a>
+                <a href="user.html"><img src="/img/icons/user.svg" alt="user"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-product">
+        <div class="width">
+            <!-- Хлебные крошки -->
+            <nav class="nav-menu">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="index.html">Главная</a></li>
+                    <li class="nav-item">/</li>
+                    <li class="nav-item"><a href="catalog.html">Каталог</a></li>
+                    <li class="nav-item">/</li>
+                    <li class="nav-item"><a href="#">Футболки</a></li>
+                </ul>
+            </nav>
+
+            <!-- Основной контейнер товара -->
+            <div class="product-container">
+                <!-- Галерея слайдов -->
+                <div class="product-gallery">
+                    <div class="gallery-container">
+                        <!-- Миниатюры слева -->
+                        <div class="gallery-thumbs-vertical">
+                            <div class="thumb thumb-active" style="background-image: url('/img/mauka/mauka_black_1.jpg')"></div>
+                            <div class="thumb" style="background-image: url('/img/mauka/mauka_black_1.jpg')"></div>
+                            <div class="thumb" style="background-image: url('/img/mauka/mauka_black_1.jpg')"></div>
+                        </div>
+
+                        <!-- Главный слайдер -->
+                        <div class="gallery-main">
+                            <div class="swiper product-main-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/img/mauka/mauka_black_1.jpg" alt="Товар">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/mauka/mauka_black_1.jpg" alt="Товар">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/mauka/mauka_black_1.jpg" alt="Товар">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-badge">
+                                <span class="star">★</span>
+                                <span>5</span>
+                            </div>
                         </div>
                     </div>
 
-                    <button class="blue-button product-button">В КОРЗИНУ</button>
-                    <button class="transparent-button product-button">ОСТАВИТЬ ОТЗЫВ</button>
+                    <!-- Кнопки навигации снизу -->
+                    <div class="gallery-nav-bottom">
+                        <button class="gallery-nav-btn-bottom prev-btn">←</button>
+                        <button class="gallery-nav-btn-bottom next-btn">→</button>
+                    </div>
+                </div>
+
+                <!-- Информация о товаре -->
+                <div class="product-info">
+                    <!-- Заголовок и рейтинг -->
+                    <div>
+                        <h1 class="product-title">Футболка с логотипом</h1>
+                        <div class="product-rating">
+                            <span class="star-rating">★★★★★</span>
+                            <span class="rating-count">(5 отзывов)</span>
+                        </div>
+                    </div>
+                    <!-- Выбор размера -->
+                    <div class="size-section">
+                        <h3 class="section-title">Размер</h3>
+                        <div class="size-grid">
+                            <button class="size-btn" data-size="XS">
+                                <span>XS</span>
+                                <span class="size-range">40</span>
+                            </button>
+                            <button class="size-btn" data-size="S">
+                                <span>S</span>
+                                <span class="size-range">42</span>
+                            </button>
+                            <button class="size-btn" data-size="M">
+                                <span>M</span>
+                                <span class="size-range">44</span>
+                            </button>
+                            <button class="size-btn" data-size="L">
+                                <span>L</span>
+                                <span class="size-range">46</span>
+                            </button>
+                            <button class="size-btn" data-size="XL">
+                                <span>XL</span>
+                                <span class="size-range">48</span>
+                            </button>
+                            <button class="size-btn" data-size="XXL">
+                                <span>XXL</span>
+                                <span class="size-range">50</span>
+                            </button>
+                            <button class="size-btn" data-size="3XL">
+                                <span>3XL</span>
+                                <span class="size-range">52</span>
+                            </button>
+                            <button class="size-btn" data-size="4XL">
+                                <span>4XL</span>
+                                <span class="size-range">56</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Описание -->
+                    <div class="description-section">
+                        <h3 class="section-title">Описание</h3>
+                        <p class="description-text">
+                            Дай понять, за кого бьется твое сердце! Эта футболка - символ твоей верности команде, а не просто одежда. Покажи, что ты - часть армии поклонников баскетбольного драйва: покоряй трибуны, покоряй город!
+                        </p>
+                    </div>
+
+                    <!-- Кнопки действия -->
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="addToCartBtn">В КОРЗИНУ</button>
+                        <button class="btn btn-secondary" id="leaveReviewBtn">ОСТАВИТЬ ОТЗЫВ</button>
+                    </div>
                 </div>
             </div>
+
+            <!-- Отзывы -->
+            <section class="reviews-section">
+                <h2 class="section-title-large">ОТЗЫВЫ</h2>
+                <div class="swiper reviews-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <span class="review-name">ЕКАТЕРИНА</span>
+                                    <span class="review-date">10 ноября</span>
+                                    <span class="review-rating">★★★★★</span>
+                                </div>
+                                <p class="review-text">
+                                    Товар хороший, но размер оказался немного больше, чем ожидала. Цвет насыщенный, но ткань могла бы быть чуть плотнее.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <span class="review-name">АЛЕКСАНДР</span>
+                                    <span class="review-date">15 ноября</span>
+                                    <span class="review-rating">★★★★★</span>
+                                </div>
+                                <p class="review-text">
+                                    Отличная качество! Быстрая доставка. Рекомендую! Логотип нанесён аккуратно и держится отлично.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <span class="review-name">МАКСИМ</span>
+                                    <span class="review-date">1 ноября</span>
+                                    <span class="review-rating">★★★★★</span>
+                                </div>
+                                <p class="review-text">
+                                    Качество отличное, все как на фото! Рекомендую всем болельщикам. Оформление красивое и оригинальное.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <span class="review-name">АННА</span>
+                                    <span class="review-date">25 октября</span>
+                                    <span class="review-rating">★★★★☆</span>
+                                </div>
+                                <p class="review-text">
+                                    Футболка села отлично, материал приятный к телу. Цвет соответствует описанию. Доставка быстрая, упаковка качественная.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review-card">
+                                <div class="review-header">
+                                    <span class="review-name">ДМИТРИЙ</span>
+                                    <span class="review-date">5 ноября</span>
+                                    <span class="review-rating">★★★★★</span>
+                                </div>
+                                <p class="review-text">
+                                    Отличный мерч! Носил на матч, получил массу комплиментов. Качество принта на высоте, ткань дышащая. Заказал еще одну!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev reviews-button-prev">←</div>
+                    <div class="swiper-button-next reviews-button-next">→</div>
+                </div>
+            </section>
         </div>
-        <div class="feedback-container">
-            <div>ОТЗЫВЫ</div>
-            <div class="feedback-slider">
-                <div class="feedback-card">
-                    <div class="card-head">
-                        <div class="card-name">ЕКАТЕРИНА</div>
-                        <div class="card-date">10 ноября</div>
-                        <div>4 *</div>
-                    </div>
-                    <div class="card-descr">
-                        Товар хороший, но размер оказался немного больше, чем ожидала. Цвет насыщенный, но ткань могла бы быть чуть плотнее.
-                    </div>
-                </div>
-                <div class="feedback-card">
-                    <div class="card-head">
-                        <div class="card-name">ЕКАТЕРИНА</div>
-                        <div class="card-date">10 ноября</div>
-                        <div>4 *</div>
-                    </div>
-                    <div class="card-descr">
-                        Товар хороший, но размер оказался немного больше, чем ожидала. Цвет насыщенный, но ткань могла бы быть чуть плотнее.
-                    </div>
-                </div>
-                <div class="feedback-card">
-                    <div class="card-head">
-                        <div class="card-name">ЕКАТЕРИНА</div>
-                        <div class="card-date">10 ноября</div>
-                        <div>4 *</div>
-                    </div>
-                    <div class="card-descr">
-                        Товар хороший, но размер оказался немного больше, чем ожидала. Цвет насыщенный, но ткань могла бы быть чуть плотнее.
-                    </div>
-                </div>
+    </main>
+
+    <!-- МОДАЛЬНОЕ ОКНО: ВЫБОР РАЗМЕРА -->
+    <div class="modal modal-size" id="modalSize">
+        <div class="modal-content">
+            <button class="modal-close" data-modal="modalSize">✕</button>
+            <h2 class="modal-title">Выберите размер</h2>
+            <div class="modal-size-grid">
+                <button class="modal-size-btn" data-size="XS">
+                    <span>XS</span>
+                    <span>40</span>
+                </button>
+                <button class="modal-size-btn" data-size="S">
+                    <span>S</span>
+                    <span>42</span>
+                </button>
+                <button class="modal-size-btn" data-size="M">
+                    <span>M</span>
+                    <span>44</span>
+                </button>
+                <button class="modal-size-btn" data-size="L">
+                    <span>L</span>
+                    <span>46</span>
+                </button>
+                <button class="modal-size-btn" data-size="XL">
+                    <span>XL</span>
+                    <span>48</span>
+                </button>
+                <button class="modal-size-btn" data-size="XXL">
+                    <span>XXL</span>
+                    <span>50</span>
+                </button>
+                <button class="modal-size-btn" data-size="3XL">
+                    <span>3XL</span>
+                    <span>52</span>
+                </button>
+                <button class="modal-size-btn" data-size="4XL">
+                    <span>4XL</span>
+                    <span>56</span>
+                </button>
             </div>
         </div>
     </div>
-   <footer class="footer">
+
+    <!-- МОДАЛЬНОЕ ОКНО: ОСТАВИТЬ ОТЗЫВ -->
+    <div class="modal modal-review" id="modalReview">
+        <div class="modal-content">
+            <button class="modal-close" data-modal="modalReview">✕</button>
+            <h2 class="modal-title">Оставить отзыв</h2>
+            
+            <div class="modal-product-info">
+                <img src="/img/mauka/mauka_black_1.jpg" alt="Товар" class="modal-product-img">
+                <div>
+                    <p class="modal-product-name">Футболка с логотипом</p>
+                    <p class="modal-product-size">Размер: <span id="selectedSizeDisplay">XS</span></p>
+                </div>
+            </div>
+
+            <form class="review-form" id="reviewForm">
+                <!-- Рейтинг -->
+                <div class="form-group">
+                    <label>Оценка</label>
+                    <div class="rating-selector">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                </div>
+
+                <!-- Текст отзыва -->
+                <div class="form-group">
+                    <label for="reviewText">Комментарий</label>
+                    <textarea id="reviewText" placeholder="Поделитесь вашим мнением..." rows="5"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">ОСТАВИТЬ ОТЗЫВ</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ОВЕРЛЕЙ для модальных окон -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <footer class="footer">
         <div class="up-footer">
             <div class="up-footer-container">
-            <div class="left-footer">
-                <img src="img/icons/Logo.svg" alt="logo">
-                <p>Станьте тем, кто первый узнает об обновлениях в коллекциях</p>
-                <input class="footer-input-text" type="text" placeholder="E-mail">
-                <p class="label-input">Указывая E-mail вы соглашаетесь бла бла бла </p>
-                <input class="footer-btn" type="submit" value="ПОДПИСАТЬСЯ">
-            </div>
-             <div class="right-footer">
-                <div>
-                    <li>Способы оплаты</li>
-                    <li>Статус заказа</li>
-                    <li>Возвраты</li>
-                    <li>Подарочные карты</li>
-                    <li>Покупателям</li>
+                <div class="left-footer">
+                    <img src="/img/icons/Logo.svg" alt="logo">
+                    <p>Станьте тем, кто первый узнает об обновлениях в коллекциях</p>
+                    <input class="footer-input-text" type="text" placeholder="E-mail">
+                    <p class="label-input">Указывая E-mail вы соглашаетесь бла бла бла </p>
+                    <input class="footer-btn" type="submit" value="ПОДПИСАТЬСЯ">
                 </div>
-                <div>
-                    <li>Футболки</li>
-                    <li>Майки</li>
-                    <li>Кофты</li>
-                    <li>Мячи</li>
-                    <li>Сувениры</li>
+                <div class="right-footer">
+                    <div>
+                        <li>Способы оплаты</li>
+                        <li>Статус заказа</li>
+                        <li>Возвраты</li>
+                        <li>Подарочные карты</li>
+                        <li>Покупателям</li>
+                    </div>
+                    <div>
+                        <li>Футболки</li>
+                        <li>Майки</li>
+                        <li>Кофты</li>
+                        <li>Мячи</li>
+                        <li>Сувениры</li>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <div class="down-footer">
             <div class="down-footer-container">
@@ -151,14 +352,15 @@
                     <p>Политика конфиденциальности</p>
                 </div>
                 <div>
-                    <img src="img/icons/vk.svg" alt="vk">
-                    <img src="img/icons/youtube.svg" alt="youtube">
-                    <img src="img/icons/tg.svg" alt="tg">
+                    <img src="/img/icons/vk.svg" alt="vk">
+                    <img src="/img/icons/youtube.svg" alt="youtube">
+                    <img src="/img/icons/tg.svg" alt="tg">
                 </div>
             </div>  
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="js/slider_script.js"></script>
+    <script src="js/card_script.js"></script>
 </body>
 </html>
