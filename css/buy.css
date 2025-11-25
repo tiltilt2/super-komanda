@@ -97,6 +97,15 @@ main {
     text-align: center;
 }
 
+.count-change {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #111;
+    background-color: transparent;
+    color: #111;
+}
+
 #remove-product {
     position: absolute;
     bottom: 20px;
