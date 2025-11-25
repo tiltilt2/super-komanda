@@ -57,36 +57,7 @@ main{
     justify-content: center;
 }
 
-.nav-menu {
-  display: flex;
-  margin-top: 104px;
-  color: #fbfbfb;
-  display: flex;
-}
 
-.nav-items {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin-left: -30px; 
-  /* соре подругому никак */
-}
-
-.nav-item {
-  list-style: none;
-  cursor: default;
-}
-
-.nav-item a {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.nav-item a:hover {
-  color: #3b71b7;
-}
 
 .title-catalog {
   font-size: 65px;

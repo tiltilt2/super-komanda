@@ -56,11 +56,19 @@
                         Все фильтры
                         <img src="img/icons/icons_filter.svg" alt="фильтры" class="filter-open-btn-img"/>
                         </button>
-                    <select name="sort-price" id="sort-price">
-                        <option value="price-asc">по наибольшей цене</option>
-                        <option value="price-desc">по наименьшей цене</option>
-                        <option value="available">сначала в наличии</option>
-                    </select>
+                    <div class="filter-dropdown">
+                        <div class="filter-btn">
+                            ПО НАИБОЛЬШЕЙ ЦЕНЕ
+                            <img src="/img/icons/arrow_down.svg" alt="arrow">
+                        </div>
+
+                        <ul class="filter-menu">
+                            <li><a href="#">ПО НАИБОЛЬШЕЙ ЦЕНЕ</a></li>
+                            <li><a href="#">ПО НАИМЕНЬШЕЙ ЦЕНЕ</a></li>
+                            <li><a href="#">ПО РЕЙТИНГУ</a></li>
+                            <li><a href="#">ПО НОВИЗНЕ</a></li>
+                        </ul>
+                    </div>
                 </div>
         
        <div class="more-cards">
@@ -305,7 +313,6 @@
     </footer>
 
 
-    <div class="filter-overlay" id="filterOverlay"></div>
 
     <div class="filter-panel" id="filterPanel">
 
