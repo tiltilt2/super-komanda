@@ -62,7 +62,7 @@ body {
         flex-direction: row;
         padding-top: 88px;
     }
-    background-image: url(/img/home/back-main.png);
+    background-image: url(img/home/back-main.png);
     background-repeat: repeat-y;
     background-position: center;
     background-size: 100%;
