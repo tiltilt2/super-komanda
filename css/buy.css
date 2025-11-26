@@ -1,6 +1,29 @@
 @font-face {
-  font-family: "PaluiSP";
-  src: url("../font/PaluiSPDemo-Bold.otf") format("opentype");
+  font-family: "VisbyBold"; 
+  src: url("../font/VisbyBold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "VisbyHeavy"; 
+  src: url("../font/VisbyHeavy.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "VisbySemibold"; 
+  src: url("../font/VisbySemibold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "PaluiSP"; 
+  src: url("../font/PaluiSPDemo-Bold.otf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
 }
 
 
@@ -14,6 +37,7 @@ main {
     background-color: #191919;
     color: #FFF;
     padding-bottom: 200px;
+    font-family: 'VisbyBold', sans-serif;
 }
 
 .main-container {
@@ -62,6 +86,7 @@ main {
     border: none;
     transition: 0.2s;
     cursor: pointer;
+    font-family: 'PaluiSP', sans-serif;
 }
 #place-an-order:hover {
     background-color: #3BC8FF;
