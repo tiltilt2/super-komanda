@@ -8,6 +8,12 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #191919;
+
+  background-image: url(../img/background/background_black.svg);
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 @font-face {
@@ -151,125 +157,6 @@ body {
 
 .under {
   text-decoration: underline;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #3b71b7;
-  z-index: 1000;
-  font-family: "PaluiSP", sans-serif;
-}
-
-.container {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  width: 120px;
-  cursor: pointer;
-}
-
-.header-menu ul {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  list-style: none;
-}
-
-.link {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-}
-
-.link::after {
-  position: absolute;
-  text-decoration: none;
-  content: "";
-  bottom: 0;
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #ffffff;
-  transition: 0.3s;
-  left: 50%;
-  transform: translate(-50%);
-}
-
-.link:hover::after {
-  width: 100%;
-  text-decoration: none;
-}
-
-.header-menu li {
-  position: relative;
-  cursor: pointer;
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.25s ease-in-out;
-  gap: 0 !important;
-  padding: 0;
-  margin: 0;
-}
-
-.dropdown-menu li {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid rgb(158, 158, 158);
-}
-
-.dropdown-menu li a {
-  color: black;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.dropdown-menu li:hover {
-  background: #f39200;
-}
-
-.dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.header-right img {
-  width: 28px;
-  cursor: pointer;
-}
-
-.link img {
-  transition: transform 0.3s ease;
-}
-
-.link:hover img {
-  transform: rotate(180deg);
 }
 
 .main-title {
