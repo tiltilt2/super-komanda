@@ -211,3 +211,8 @@ main{
     opacity: 1;
     visibility: visible;
 }
+.card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
