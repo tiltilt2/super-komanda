@@ -75,7 +75,7 @@ body {
     margin-top: 90px;
     height: 741px;
     width: 100%;
-    background-image: url("/img/home/back.svg");
+    background-image: url("img/home/back.svg");
     background-color: #000000d8;
     background-position: center;
     background-repeat: no-repeat;
