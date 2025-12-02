@@ -41,6 +41,10 @@ body {
 .main {
     background-color: #191919;
     padding-bottom: 210px;
+    background-image: url("../img/home/back-main.png");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100%;
     div {
         display: flex;
         justify-content: center;
@@ -62,11 +66,6 @@ body {
         flex-direction: row;
         padding-top: 88px;
     }
-    background-image: url(img/home/back-main.png);
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: 100%;
-    
 }
 
 .intro {
@@ -75,7 +74,7 @@ body {
     margin-top: 90px;
     height: 741px;
     width: 100%;
-    background-image: url("img/home/back.svg");
+    background-image: url("../img/home/back.svg");
     background-color: #000000d8;
     background-position: center;
     background-repeat: no-repeat;
@@ -178,6 +177,7 @@ body {
         font-weight: 700;
         font-family: "RalewayRegular", sans-serif;
         line-height: 16px;
+        transition: all 0.2s;
     }
     button:hover {
         background-color: #E94E1B;
@@ -206,13 +206,13 @@ body {
 
             display: flex;
             align-items: center;
-            background-image: url(/img/home/change.png);
+            background-image: url(../img/home/change.png);
             background-repeat: no-repeat;
             background-position: center;
             transition: all 0.2s;
         }
         button:hover {
-            background-image: url(/img/home/change-hover.png);
+            background-image: url(../img/home/change-hover.png);
         }
     }
     .block-cards-right {

@@ -84,12 +84,12 @@ main {
     background-color: #F39200;
     color: #FFF;
     border: none;
-    transition: 0.2s;
     cursor: pointer;
     font-family: 'PaluiSP', sans-serif;
+    transition: all 0.2s;
 }
 #place-an-order:hover {
-    background-color: #3BC8FF;
+    background-color: #E94E1B;
 }
 
 .products-list {

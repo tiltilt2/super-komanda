@@ -127,11 +127,11 @@ main {
     background-color: #F39200;
     color: #FFF;
     border: none;
-    transition: 0.2s;
+    transition: all 0.2s;
     font-family: 'PaluiSP', sans-serif;
 }
 #place-an-order:hover {
-    background-color: #3BC8FF;
+    background-color: #E94E1B;;
 }
 
 

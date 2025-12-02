@@ -100,7 +100,12 @@ main {
     cursor: pointer;
     font-size: 16px;
     font-weight: 500;
-    transition: 0.3s;
+    transition: all 0.2s;
+}
+
+.footer-btn:hover {
+        background-color: #E94E1B;
+        cursor: pointer;
 }
 
 .right-footer {
@@ -114,6 +119,11 @@ main {
     cursor: pointer;
     font-size: 16px;
     transition: 0.3s;
+}
+
+.right-footer div li a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .right-footer div li:hover {
@@ -144,6 +154,10 @@ main {
 
 .under{
     text-decoration: underline;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 
@@ -153,7 +167,7 @@ main {
     left: 0;
     width: 100%;
     background: #3B71B7;
-    z-index: 1000;
+    z-index: 100000000;
     font-family: 'PaluiSP', sans-serif;
 }
 
@@ -261,6 +275,9 @@ main {
 .header-right img {
     width: 28px;
     cursor: pointer;
+}
+.header-right img:hover{
+    filter: brightness(80%) invert(1);
 }
 
 .link img {

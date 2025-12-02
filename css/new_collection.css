@@ -136,6 +136,12 @@ main{
   cursor: pointer;
   transition: background-color 0.7s;
   margin-bottom: 100px;
+  transition: all 0.2s;
+}
+
+.load-more-btn:hover{
+    background-color: #3b71b7;
+    border: none;
 }
 
 .btn-down{
