@@ -101,7 +101,7 @@
                     <div>
                         <h1 class="product-title">Футболка с логотипом</h1>
                         <div class="product-rating">
-                            <span class="star-rating">★★★★★</span>
+                            <span class="star-rating"></span>
                             <span class="rating-count">(5 отзывов)</span>
                         </div>
                     </div>
@@ -363,5 +363,20 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/card_script.js"></script>
+    <script> 
+        let productRating = 5;
+
+        function renderStars(rating) {
+            const max = 5;
+            return "★".repeat(rating) + "☆".repeat(max - rating);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const starBlock = document.querySelector(".star-rating");
+            if (starBlock) {
+                starBlock.textContent = renderStars(productRating);
+            }
+        });
+    </script>
 </body>
 </html>
