@@ -76,6 +76,8 @@ main {
     border: none;
     border-bottom: 2px solid gray;
     color: #FFF;
+    font-family: 'VisbyBold', sans-serif;
+    font-size: 24px;
 }
 
 #place-an-order {
