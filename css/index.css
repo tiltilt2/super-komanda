@@ -72,7 +72,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-top: 90px;
-    height: 741px;
+    min-height: 741px;
     width: 100%;
     background-image: url("../img/home/back.svg");
     background-color: #000000d8;
@@ -88,12 +88,6 @@ body {
     h1 {
         font-size: 100px;
         margin: 13px 0;
-    }
-    button {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        text-transform: uppercase;
     }
 }
 
@@ -143,15 +137,13 @@ body {
         align-items: start;
         gap: 40px;
         flex-direction: column;
-        max-width: 560px;
-        width: 100%;
         h3, h4, p {
             margin: 0;
             font-size: 30px;
             font-weight: 800;
         }
         h3 {
-            width: 460px;
+            max-width: 300px;
         }
         .new-collection-info, .season-form-info {
             align-items: start;
@@ -161,13 +153,21 @@ body {
         h4, p {
             text-transform: none;
             font-family: "VisbyBold", sans-serif;
+            max-width: 560px;
+            width: 100%;
         }
     }
     .season-form-left {
         gap: 62px;
     }
-    button {
-        width: 1160px;
+    .more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        max-width: 1160px;
+        text-decoration: none;
+        width: 100%;
         height: 55px;
         border: none;
         border-radius: 0;
@@ -179,9 +179,14 @@ body {
         line-height: 16px;
         transition: all 0.2s;
     }
-    button:hover {
+    .more:hover {
         background-color: #E94E1B;
         cursor: pointer;
+    }
+    img {
+        max-width: 560px;
+        width: 100%;
+        object-fit: cover;
     }
 }
 
@@ -252,6 +257,7 @@ body {
         font-size: 30px;
         font-weight: 700;
         width: 160px;
+        margin: 0;
     }
     .card-image{
         object-fit: cover;
@@ -333,5 +339,407 @@ body {
     }
     .button:hover {
         background-color: #3B4B6F;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1280px) {
+    .header, .footer {
+        display: none;
+    }
+
+    .main {
+        padding-bottom: 120px;
+        .new-collection, .season-form {
+            padding: 100px 0 120px;
+        }
+        .new-collection {
+            padding: 100px 0 120px;
+        }
+        .season-form {
+            padding-top: 100px;
+        }
+    }
+
+    .intro {
+        p {
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 70px;
+        }
+    }
+
+    .new-collection, .season-form {
+        gap: 30px;
+        .block-info {
+            gap: 30px;
+        }
+        .column {
+            gap: 32px;
+            h3, h4, p {
+                font-size: 25px;
+            }
+            p {
+                width: 460px;
+            }
+        }
+        .season-form-left {
+            gap: 52px;
+        }
+        img {
+            width: 460px;
+        }
+        .more {
+            width: 950px;
+        }
+    }
+
+    .block-cards {
+        gap: 140px;
+        .cards-up {
+            padding-right: 0px;
+        } 
+    }
+}
+
+@media (min-width: 761px) and (max-width: 960px) {
+    .header, .footer {
+        display: none;
+    }
+
+    .main {
+        padding-bottom: 120px;
+        .new-collection, .season-form {
+            padding: 100px 0 120px;
+        }
+        .new-collection {
+            padding: 100px 0 120px;
+        }
+        .season-form {
+            padding-top: 100px;
+        }
+    }
+
+    .intro {
+        p {
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 70px;
+        }
+    }
+
+    .new-collection, .season-form {
+        gap: 30px;
+        .block-info {
+            gap: 30px;
+        }
+        .column {
+            gap: 21px;
+            h3, h4, p {
+                font-size: 22px;
+            }
+            p {
+                width: 350px;
+            }
+        }
+        .season-form-left {
+            gap: 43px;
+        }
+        img {
+            width: 360px;
+        }
+        .more {
+            width: 750px;
+        }
+    }
+
+    .block-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        .block-cards-left {
+            align-items: center;
+            gap: 30px;
+            h3 {
+                text-align: center;
+                width: 300px;
+            }
+        }
+        .cards-up {
+            padding-right: 0px;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 760px) {
+    .header, .footer {
+        display: none;
+    }
+
+    .main {
+        padding-bottom: 120px;
+        .new-collection, .season-form {
+            padding: 100px 0 120px;
+        }
+        .new-collection {
+            padding: 100px 0 100px;
+        }
+        .season-form {
+            padding-top: 50px;
+        }
+    }
+
+    .intro {
+        p {
+            font-size: 13px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .marquee__inner {
+        font-size: 25px;
+    }
+
+    .new-collection, .season-form {
+        gap: 10px;
+        .block-info {
+            gap: 10px;
+        }
+        .column {
+            gap: 10px;
+            h3, h4, p {
+                font-size: 14px;
+                width: 210px;
+            }
+        }
+        .season-form-left {
+            gap: 42px;
+        }
+        img {
+            width: 210px;
+        }
+        .more {
+            width: 430px;
+            font-size: 12px;
+            height: 30px;
+        }
+    }
+
+    .block-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .block-cards-left {
+            align-items: center;
+            gap: 20px;
+            h3 {
+                text-align: center;
+                width: 300px;
+                font-size: 20px;
+            }
+            button {
+                width: 90px;
+                height: 120px;
+                background-size: cover;
+            }
+            button:hover {
+                background-image: url(../img/home/change-hover.png);
+            }
+        }
+        .cards-up {
+            padding-right: 0px;
+        }
+        .card {
+            padding: 15px;
+            width: 150px;
+        }
+        .card-image{
+            width: 90px;
+            height: 126px;
+        }
+        .up {
+            width: 150px;
+            .tooltip {
+                width: 110px;
+            }
+        }
+        .rating {
+            font-size: 12px;
+            width: 150px;
+        }
+        .desc {
+            width: 150px;
+            font-size: 14px;
+        }    
+        .button {
+            width: 150px;
+            font-size: 12px;
+            margin-top: 0px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header, .footer {
+        display: none;
+    }
+
+    .main {
+        padding-bottom: 70px;
+        .new-collection, .season-form {
+            padding: 50px 0 70px;
+        }
+        .new-collection {
+            padding: 50px 0 60px;
+        }
+        .season-form {
+            padding-top: 10px;
+        }
+    }
+
+    .marquee__inner {
+        font-size: 20px;
+    }
+
+    .intro {
+        p {
+            font-size: 10px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+    .new-collection, .season-form {
+        gap: 10px;
+        .block-info {
+            gap: 10px;
+            flex-direction: column;
+        }
+        .season-info {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .column {
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h3, h4, p {
+                font-size: 14px;
+                width: 300px;
+            }
+        }
+        .season-form-left {
+            gap: 10px;
+        }
+        img {
+            width: 300px;
+        }
+        .more {
+            width: 300px;
+            font-size: 12px;
+            height: 30px;
+        }
+    }
+
+    .block-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        .block-cards-left {
+            align-items: center;
+            gap: 20px;
+            h3 {
+                text-align: center;
+                width: 300px;
+                font-size: 20px;
+            }
+            button {
+                width: 90px;
+                height: 120px;
+                background-size: cover;
+            }
+            button:hover {
+                background-image: url(../img/home/change-hover.png);
+            }
+        }
+        .cards-up {
+            padding-right: 0px;
+        }
+        .cards-up, .cards-down {
+            flex-direction: column;
+        }
+        .card {
+            padding: 15px;
+            width: 150px;
+        }
+        .card-image{
+            width: 90px;
+            height: 126px;
+        }
+        .up {
+            width: 150px;
+            .tooltip {
+                width: 110px;
+            }
+        }
+        .rating {
+            font-size: 12px;
+            width: 150px;
+        }
+        .desc {
+            width: 150px;
+            font-size: 14px;
+        }    
+        .button {
+            width: 150px;
+            font-size: 12px;
+            margin-top: 0px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .intro {
+        p {
+            font-size: 8px;
+        }
+        h1 {
+            font-size: 20px;
+            margin: 5px;
+        }
+    }
+      .new-collection, .season-form {
+        .column {
+            h3, h4, p {
+                font-size: 12px;
+                width: 200px;
+            }
+        }
+        img {
+            width: 200px;
+        }
+        .more {
+            width: 200px;
+            font-size: 8px;
+            height: 20px;
+        }
+    }
+
+    .block-cards {
+        .block-cards-left {
+            h3 {
+                text-align: center;
+                width: 300px;
+                font-size: 12px;
+            }
+        }
     }
 }
