@@ -18,7 +18,7 @@
                 <ul>
                     <li><a class="link" href="index.html">Главная</a></li>
                     <li class="dropdown">
-                        <a class="link" href="catalog.html">Каталог <img src="img/icons/arrow_down.svg" alt="arrow" width="25px"></a>
+                        <a class="link" href="catalog.html">Каталог <img class="arrow-down" src="img/icons/arrow_down.svg" alt="arrow" width="25px"></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Футболки</a></li>
                             <li><a href="#">Майки</a></li>
@@ -234,5 +234,13 @@
             </div>  
         </div>
     </footer>
+<script>
+    const logo = document.querySelector('.logo');
+    const menu = document.querySelector('.header-menu');
+
+    logo.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    });
+</script>
 </body>
 </html>

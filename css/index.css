@@ -343,10 +343,6 @@ body {
 }
 
 @media (min-width: 961px) and (max-width: 1280px) {
-    .header, .footer {
-        display: none;
-    }
-
     .main {
         padding-bottom: 120px;
         .new-collection, .season-form {
@@ -403,10 +399,6 @@ body {
 }
 
 @media (min-width: 761px) and (max-width: 960px) {
-    .header, .footer {
-        display: none;
-    }
-
     .main {
         padding-bottom: 120px;
         .new-collection, .season-form {
@@ -474,10 +466,6 @@ body {
 }
 
 @media (min-width: 481px) and (max-width: 760px) {
-    .header, .footer {
-        display: none;
-    }
-
     .main {
         padding-bottom: 120px;
         .new-collection, .season-form {
@@ -585,10 +573,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    .header, .footer {
-        display: none;
-    }
-
     .main {
         padding-bottom: 70px;
         .new-collection, .season-form {

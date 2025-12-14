@@ -80,5 +80,13 @@
         />
       </form>
     </main>
+    <script>
+    const logo = document.querySelector('.logo');
+    const menu = document.querySelector('.header-menu');
+
+    logo.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    });
+</script>
   </body>
 </html>

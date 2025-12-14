@@ -222,3 +222,23 @@ main{
             color: inherit;
             display: block;
         }
+
+@media (min-width: 961px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 761px) and (max-width: 960px){
+
+}   
+
+@media (min-width: 481px) and (max-width: 760px){
+
+}
+
+@media (max-width: 480px){
+
+}
+
+@media (max-width: 320px){
+
+}
