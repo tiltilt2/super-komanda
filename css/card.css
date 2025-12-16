@@ -44,10 +44,22 @@ body {
 }
 
 .width {
-  max-width: 1500px;
+  max-width: 90%;
   margin: 0 auto;
   padding: 0 20px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .width {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .width {
+    padding: 0 10px;
+  }
 }
 
 /* Хлебные крошки */
@@ -381,10 +393,7 @@ body {
 
 /* Отзывы */
 .reviews-section {
-  margin-top: 100px;
   padding-top: 80px;
-  padding-left: 40px;
-  padding-right: 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }

@@ -287,10 +287,15 @@ body {
     width: 100%;
   }
   
-  .card::before {
+  .title-catalog {
+    font-size: 48px;
   }
 }
-
+@media (max-width: 600px) {
+  .title-catalog {
+    font-size: 36px;
+  }
+}
 .card img {
   width: 100%;
   height: auto;
