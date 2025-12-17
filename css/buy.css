@@ -38,6 +38,11 @@ main {
     color: #FFF;
     padding-bottom: 200px;
     font-family: 'VisbyBold', sans-serif;
+
+    background-image: url("../img/home/back-main.png");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100%;
 }
 
 .main-container {
@@ -183,7 +188,40 @@ main {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 716px) {
+    .main-container {
+        width: 500px;
+    }
+
+    .buy-wrap {
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #buy-form {
+        width: 100%;
+    }
+
+    .product-list {
+        width: 100%;
+    }
+
+    .product {
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headline {
+        font-size: 20px;
+        margin: 20px 0px;
+    }
+}
+
+@media (max-width: 520px) {
     .main-container {
         width: 300px;
     }
@@ -213,5 +251,11 @@ main {
     .headline {
         font-size: 20px;
         margin: 20px 0px;
+    }
+}
+
+@media (max-width: 481px) {
+    main {
+        margin-top: 80px;
     }
 }
