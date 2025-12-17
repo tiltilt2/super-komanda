@@ -134,6 +134,11 @@ main {
     color: #F39200;
 }
 
+.up-footer-container,
+.down-footer-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 .down-footer-container {
     max-width: 1500px;           
