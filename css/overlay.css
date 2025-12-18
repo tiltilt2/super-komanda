@@ -205,7 +205,7 @@
     }
 
     .filter-header h2 {
-        font-size: 22px;
+        font-size: 15px;
     }
 
     .filter-content h3 {
@@ -232,6 +232,52 @@
     .apply-btn {
         font-size: 15px;
         padding: 10px;
+    }
+    .filter-content{
+        flex-direction: column;
+    }
+    .price-box{
+        flex-direction: column;
+    }
+}
+@media (max-width: 450px) {
+    .filter-panel {
+        width: 60%;
+        left: -60%;
+    }
+
+    .filter-header {
+        padding: 25px;
+    }
+
+    .filter-header h2 {
+        font-size: 16px;
+    }
+
+    .filter-content h3 {
+        font-size: 17px;
+        margin-top: 22px;
+        margin-bottom: 18px;
+    }
+
+    .price-box input {
+        width: 70px;
+        font-size: 13px;
+    }
+
+    .size-item {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .filter-content label,
+    .custom-checkbox {
+        font-size: 13px;
+    }
+
+    .apply-btn {
+        font-size: 14px;
+        padding: 9px;
     }
 }
 
