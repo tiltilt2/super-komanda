@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/new_collection.css">
     <link rel="stylesheet" href="css/footerheader.css">
+    <link rel="stylesheet" href="css/new_collection.css">
     <link rel="stylesheet" href="css/card_for_copy.css">
     <link rel="stylesheet" href="css/overlay.css">
     <link rel="shortcut icon" href="img/icons/Logo.svg" type="image/x-icon">
-    <title>Новая коллекция</title>
+    <title>Мячи</title>
 </head>
 <body>
-   <header class="header">
+    <header class="header">
     <div class="container">
         <div class="header-left">
             <img src="img/icons/Logo.svg" alt="logo" class="logo">
@@ -36,7 +36,7 @@
         </nav>
 
         <div class="header-right">
-            <a href=><img src="img/icons/search.svg" alt="search"></a>    
+            <a href="#"><img src="img/icons/search.svg" alt="search"></a>    
             <a href="basket.html"><img src="img/icons/basket.svg" alt="bag"></a>
             <a href="autorisation.html"><img src="img/icons/user.svg" alt="user"></a>
         </div>
@@ -51,7 +51,7 @@
                 <li class="nav-item">Каталог</li>
             </ul>
             </nav>
-            <h1 class="title-catalog">Новая коллекция</h1>
+           <h1 class="title-catalog">Новая коллекция</h1>
                 <div class="filters">
                         <button class="filter-open-btn">
                         Все фильтры
@@ -107,6 +107,7 @@
             <button class="load-more-btn">загрузить ещё</button>
        </div>
     </main>
+
     <footer class="footer">
         <div class="up-footer">
             <div class="up-footer-container">
@@ -114,7 +115,7 @@
                 <img src="img/icons/Logo.svg" alt="logo">
                 <p>Станьте тем, кто первый узнает об обновлениях в коллекциях</p>
                 <input class="footer-input-text" type="text" placeholder="E-mail">
-                <p class="label-input">Указывая E-mail вы соглашаетесь с политикой конфиденциальности</p>                
+                <p class="label-input">Указывая E-mail вы соглашаетесь с политикой конфиденциальности</p>
                 <input class="footer-btn" type="submit" value="ПОДПИСАТЬСЯ">
             </div>
              <div class="right-footer">
@@ -152,8 +153,6 @@
         </div>
     </footer>
 
-
-
     <div class="filter-panel" id="filterPanel">
 
     <div class="filter-header">
@@ -179,44 +178,19 @@
             <div class="size-item">XL<br>56–58</div>
             <div class="size-item">XXL<br>60–62</div>
         </div>
+
         <h3>ПОЛ</h3>
-        <label class="custom-checkbox">
-            <input type="checkbox">
-            <span>Красный</span>
-        </label>
-        <label class="custom-checkbox">
-            <input type="checkbox">
-            <span>Синий</span>
-        </label>
-        <label class="custom-checkbox">
-            <input type="checkbox">
-            <span>Оранжевый</span>
-        </label>
+        <label class="custom-checkbox"><input type="checkbox"><span>Красный</span></label>
+        <label class="custom-checkbox"><input type="checkbox"><span>Синий</span></label>
+        <label class="custom-checkbox"><input type="checkbox"><span>Оранжевый</span></label>
+
         <h3>ЦВЕТ</h3>
-        <label class="custom-checkbox">
-            <input type="checkbox">
-            <span>Зеленый</span>
-        </label>
-        <label class="custom-checkbox">
-            <input type="checkbox">
-            <span>Белый</span>
-        </label>
-        <label class="custom-checkbox">
-            <input type="checkbox">
-            <span>Черный</span>
-        </label>
-        <label class="custom-checkbox">
-            <input type="checkbox">
-            <span>Мужское</span>
-        </label>
-        <label class="custom-checkbox">
-            <input type="checkbox">
-            <span>Желтый</span>
-        </label>
-        <label class="custom-checkbox">
-            <input type="checkbox">
-            <span>Фиолетовый</span>
-        </label>
+        <label class="custom-checkbox"><input type="checkbox"><span>Зеленый</span></label>
+        <label class="custom-checkbox"><input type="checkbox"><span>Белый</span></label>
+        <label class="custom-checkbox"><input type="checkbox"><span>Черный</span></label>
+        <label class="custom-checkbox"><input type="checkbox"><span>Мужское</span></label>
+        <label class="custom-checkbox"><input type="checkbox"><span>Желтый</span></label>
+        <label class="custom-checkbox"><input type="checkbox"><span>Фиолетовый</span></label>
 
     </div>
 
@@ -228,29 +202,25 @@
     const openBtn = document.querySelector('.filter-open-btn');
     const closeBtn = document.querySelector('#filterClose');
     const panel   = document.querySelector('#filterPanel');
-    const overlay = document.querySelector('#filterOverlay');
 
     openBtn.onclick = () => {
         panel.classList.add('active');
-        overlay.classList.add('active');
-        document.body.style.overflow = "hidden"; // блокируем прокрутку
+        document.body.style.overflow = "hidden";
     }
 
     const closePanel = () => {
         panel.classList.remove('active');
-        overlay.classList.remove('active');
         document.body.style.overflow = "";
     }
 
     closeBtn.onclick = closePanel;
-    overlay.onclick = closePanel;
     const logo = document.querySelector('.logo');
     const menu = document.querySelector('.header-menu');
 
     logo.addEventListener('click', () => {
     menu.classList.toggle('active');
     });
-
 </script>
+
 </body>
 </html>
