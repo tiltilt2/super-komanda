@@ -348,4 +348,22 @@ main{
   cursor: pointer;
   transition: background-color 0.7s;
 }
+.filters {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+.filter-btn {
+    background: #3b71b7;
+    color: white;
+    padding: 29px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    font-size: 10px;
+}
 }
